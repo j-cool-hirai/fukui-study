@@ -1,3 +1,15 @@
+# 第1回　福井支店コーディング勉強会
+## デザイン
+https://www.figma.com/file/zcuMNPgTObLP1jnHv2YIec/%E8%AA%B2%E9%A1%8C?type=design&node-id=0-1&mode=design&t=a6AcqJFIPXlMvVXx-0
+## コーディングルール
+・gitで管理―それぞれ自分の名前のフォルダ内にhtmlとcss（必要であればjs）を入れてください。
+・cssの命名規則はFLOCSS（template/scssを使う）
+・セマンティックHTMLを意識（section内にhタグを入れる、カード形式のコンテンツはarticleを使用する等）
+・画像はwebp化・Retinaディスプレイ対応まで行う（pictureタグで囲み、webp対応でないデバイスでも見れるように）
+・npm、node.js等は今回使わない
+・フォントはgoogle fontsからの読み込み
+・デザインにないアニメーションの実装を行いたい場合は、下記からアニメーションをご確認下さい。（希望者のみでOKです）
+　https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/1-1/1-1.html
 # 福井支店勉強会のリポジトリ
 ## 使用するブランチ
 ※基本的にmainブランチとdevelopブランチは触らないでください。<br>
