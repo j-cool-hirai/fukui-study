@@ -28,17 +28,11 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--white);
-  color: var(--black-dark2);
+  background-color: var(--gray);
+  color: var(--black);
 }
 
 main {
-  background-color: var(--blue-light2);
-  margin-top: 95px;
-
-  @include MQ(md) {
-    margin-top: 75px;
-  }
 }
 
 ul {
