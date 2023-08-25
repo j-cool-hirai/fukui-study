@@ -444,6 +444,7 @@ input[type=checkbox]:not(:checked) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .p-sanmple__header-title-sub {
@@ -457,6 +458,7 @@ input[type=checkbox]:not(:checked) {
   color: #ffffff;
   font-family: "Parisienne", cursive;
   font-weight: 400;
+  text-align: center;
 }
 
 .p-sanmple__header-button {
@@ -682,6 +684,9 @@ input[type=checkbox]:not(:checked) {
 
 .p-sanmple__menu-swiper {
   margin-top: 50px;
+}
+.p-sanmple__menu-swiper .swiper-pagination-bullet-active {
+  background-color: var(--pink);
 }
 
 .p-sanmple__menu-title {
