@@ -1,5 +1,3 @@
-console.log('navigation.js');
-
 // .js-sanmple__header-buttonを取得する
 const headerButton = document.querySelector('.js-sanmple__header-button');
 // headerButtonにクリックイベントを設定する

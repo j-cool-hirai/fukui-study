@@ -1,1 +1,6 @@
-@use '../Global/' as *;
+@use "../Global/" as *;
+
+.l-sanmple__inner {
+    padding: 0 30px;
+    margin: 0 auto;
+}
