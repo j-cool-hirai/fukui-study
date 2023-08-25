@@ -455,13 +455,13 @@ input[type=checkbox]:not(:checked) {
 }
 
 .p-sanmple__header-button {
-  position: absolute;
+  position: fixed;
   top: 47px;
   right: 10px;
   cursor: pointer;
   width: 50px;
   height: 50px;
-  border-radius: 5px;
+  z-index: 1;
 }
 .p-sanmple__header-button::before, .p-sanmple__header-button::after {
   content: "";
@@ -471,13 +471,27 @@ input[type=checkbox]:not(:checked) {
   left: 14px;
   height: 3px;
   background: #666666;
+  transition: all 0.4s;
 }
 .p-sanmple__header-button::before {
-  top: 15px;
-  width: 45%;
+  top: 22px;
+  width: 50%;
 }
 .p-sanmple__header-button::after {
-  top: 23px;
+  top: 29px;
+  width: 30%;
+}
+
+.js-sanmple__header-button-active::before {
+  top: 20px;
+  left: 16px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 35%;
+}
+.js-sanmple__header-button-active::after {
+  top: 32px;
+  left: 16px;
+  transform: translateY(-6px) rotate(45deg);
   width: 35%;
 }
 
@@ -540,11 +554,15 @@ input[type=checkbox]:not(:checked) {
 
 .p-sanmple__header-nav {
   background-color: var(--pink);
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: none;
+}
+
+.js-sanmple__header-nav-active {
+  display: block;
 }
 
 .p-sanmple__header-nav-content {
