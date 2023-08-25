@@ -1,9 +1,9 @@
-// .js-sanmple__header-buttonを取得する
-const headerButton = document.querySelector('.js-sanmple__header-button');
+// .js-sample__header-buttonを取得する
+const headerButton = document.querySelector('.js-sample__header-button');
 // headerButtonにクリックイベントを設定する
 headerButton.addEventListener('click', () => {
-    // .js-sanmple__header-buttonにjs-sanmple__header-button-activeクラスを付与する
-    headerButton.classList.toggle('js-sanmple__header-button-active');
-    // .p-sanmple__header-navにjs-sanmple__header-nav-activeクラスを付与する
-    document.querySelector('.p-sanmple__header-nav').classList.toggle('js-sanmple__header-nav-active');
+    // .js-sample__header-buttonにjs-sample__header-button-activeクラスを付与する
+    headerButton.classList.toggle('js-sample__header-button-active');
+    // .p-sample__header-navにjs-sample__header-nav-activeクラスを付与する
+    document.querySelector('.p-sample__header-nav').classList.toggle('js-sample__header-nav-active');
 });
