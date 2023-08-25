@@ -21,15 +21,112 @@
 
 .p-sanmple__header-title-sub {
     font-size: rem(25);
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
 }
 
 .p-sanmple__header-title-main {
     font-size: rem(115);
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: $font-family-parisienne;
     font-weight: 400;
+}
+
+.p-sanmple__header-button {
+    position: absolute;
+    top: 47px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        transition: all 0.4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        background: #666666;
+    }
+
+    &::before {
+        top: 15px;
+        width: 45%;
+    }
+
+    &::after {
+        top: 23px;
+        width: 35%;
+    }
+}
+
+.p-sanmple__header-scrolldown {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    span {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        color: #eee;
+        font-size: rem(11);
+        letter-spacing: 0.05em;
+        -ms-writing-mode: tb-rl;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #eee;
+        animation:
+            circlemove 1.6s ease-in-out infinite,
+            cirlemovehide 1.6s ease-out infinite;
+    }
+
+    @keyframes circlemove {
+        0% {
+            bottom: 45px;
+        }
+        100% {
+            bottom: -5px;
+        }
+    }
+
+    @keyframes cirlemovehide {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0.9;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 2px;
+        height: 50px;
+        background: #eee;
+    }
 }
 
 .p-sanmple__header-nav {
@@ -38,6 +135,9 @@
     top: 0;
     width: 100%;
     height: 100%;
+
+    // 開閉処理入れ次第、削除
+    display: none;
 }
 
 .p-sanmple__header-nav-content {
@@ -50,7 +150,7 @@
 
 .p-sanmple__header-nav-title {
     font-size: rem(32);
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     font-family: $font-family-parisienne;
 }
@@ -61,7 +161,7 @@
 
 .p-sanmple__header-nav-list-item-link {
     padding: 10px;
-    color: #FFFFFF;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +191,7 @@
 
 .p-sanmple__footer-menu-list {
     display: flex;
-    gap: 20px                                       ;
+    gap: 20px;
 }
 
 .p-sanmple__footer-menu-list-item-link {
