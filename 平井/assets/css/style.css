@@ -684,12 +684,24 @@ input[type=checkbox]:not(:checked) {
 }
 
 .p-sample__menu-swiper {
+  padding-bottom: 30px !important;
   margin-top: 50px;
 }
 .p-sample__menu-swiper .swiper-pagination-bullet-active {
   background-color: var(--pink);
 }
-
+.p-sample__menu-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+.p-sample__menu-swiper .swiper-button-next,
+.p-sample__menu-swiper .swiper-button-prev {
+  color: #999999;
+}
+.p-sample__menu-swiper .swiper-button-next::before, .p-sample__menu-swiper .swiper-button-next::after,
+.p-sample__menu-swiper .swiper-button-prev::before,
+.p-sample__menu-swiper .swiper-button-prev::after {
+  font-size: 1rem;
+}
 .p-sample__menu-title {
   font-size: 4rem;
   text-align: center;
