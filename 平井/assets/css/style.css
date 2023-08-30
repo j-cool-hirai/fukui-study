@@ -693,15 +693,7 @@ input[type=checkbox]:not(:checked) {
 .p-sample__menu-swiper .swiper-pagination {
   bottom: 0 !important;
 }
-.p-sample__menu-swiper .swiper-button-next,
-.p-sample__menu-swiper .swiper-button-prev {
-  color: #999999;
-}
-.p-sample__menu-swiper .swiper-button-next::before, .p-sample__menu-swiper .swiper-button-next::after,
-.p-sample__menu-swiper .swiper-button-prev::before,
-.p-sample__menu-swiper .swiper-button-prev::after {
-  font-size: 1rem;
-}
+
 .p-sample__menu-title {
   font-size: 4rem;
   text-align: center;
@@ -737,6 +729,76 @@ input[type=checkbox]:not(:checked) {
   margin: 100px auto 0;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.p-sample__menu-container {
+  position: relative;
+}
+.p-sample__menu-container .swiper-button-next,
+.p-sample__menu-container .swiper-button-prev {
+  color: #999999;
+}
+.p-sample__menu-container .swiper-button-next::before, .p-sample__menu-container .swiper-button-next::after,
+.p-sample__menu-container .swiper-button-prev::before,
+.p-sample__menu-container .swiper-button-prev::after {
+  font-size: 1rem;
+}
+.p-sample__menu-container .swiper-button-prev {
+  left: 0px;
+}
+.p-sample__menu-container .swiper-button-next {
+  right: 0;
+}
+
+.p-sample__contact {
+  padding-top: 70px;
+}
+
+.p-sample__contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-sample__contact-content-image {
+  width: min(100%, 1246px);
+}
+.p-sample__contact-content-image img {
+  width: 100%;
+}
+
+.p-sample__contact-info-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.p-sample__contact-info-tel {
+  font-size: 1.1875rem;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.p-sample__contact-info-time {
+  font-size: 0.8125rem;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.p-sample__contact-info-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #cccccc;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 32px;
+  margin: 30px auto 0;
+}
+
+.p-sample__contact-box {
+  width: min(100%, 445px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Utility (prefix: u-)
