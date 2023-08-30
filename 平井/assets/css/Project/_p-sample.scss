@@ -51,7 +51,7 @@
     cursor: pointer;
     width: 50px;
     height: 50px;
-    z-index: 1;
+    z-index: 4;
 
     &::before,
     &::after {
@@ -161,16 +161,11 @@
 .p-sample__header-nav {
     background-color: var(--pink);
     position: fixed;
-    top: 0;
+    top: -100%;
     width: 100%;
     height: 100vh;
-
-    // 開閉処理入れ次第、削除
-    display: none;
-}
-
-.js-sample__header-nav-active {
-    display: block;
+    z-index: 3;
+    transition: all 0.4s;
 }
 
 .p-sample__header-nav-content {
@@ -382,6 +377,7 @@
     .swiper-button-next,
     .swiper-button-prev {
         color: #999999;
+        z-index: 1;
 
         // before, after
         &::before,
