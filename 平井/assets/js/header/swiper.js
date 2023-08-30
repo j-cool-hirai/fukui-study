@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -10,6 +10,21 @@ const swiper = new Swiper(".swiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    // レスポンシブブレイクポイント（画面幅による設定）
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
     },
 });
 

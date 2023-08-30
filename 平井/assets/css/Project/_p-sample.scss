@@ -9,6 +9,8 @@
 
     img {
         width: 100%;
+        height: 100vh;
+        object-fit: cover;
     }
 }
 
@@ -24,6 +26,10 @@
     font-size: rem(25);
     color: #ffffff;
     text-align: center;
+
+    @include MQ("md") {
+        font-size: rem(13);
+    }
 }
 
 .p-sample__header-title-main {
@@ -32,6 +38,10 @@
     font-family: $font-family-parisienne;
     font-weight: 400;
     text-align: center;
+
+    @include MQ("md") {
+        font-size: rem(64);
+    }
 }
 
 .p-sample__header-button {
@@ -194,6 +204,12 @@
     display: flex;
     justify-content: space-between;
     padding: 68px 77px;
+
+    @include MQ("md") {
+        flex-direction: column;
+        align-items: center;
+        padding: 68px 60px;
+    }
 }
 
 .p-sample__footer-title-sub {
@@ -206,10 +222,19 @@
     font-family: $font-family-parisienne;
     font-weight: 400;
     margin-top: 12px;
+
+    @include MQ("md") {
+        font-size: rem(24);
+        margin-top: 8px;
+    }
 }
 
 .p-sample__footer-menu {
     padding-top: 45px;
+
+    @include MQ("md") {
+        padding-top: 79px;
+    }
 }
 
 .p-sample__footer-menu-list {
@@ -225,15 +250,30 @@
     font-size: rem(13);
     text-align: right;
     margin-top: 75px;
+
+    @include MQ("md") {
+        font-size: rem(11);
+        text-align: center;
+        margin-top: 40px;
+    }
 }
 
 .p-sample__about {
     padding: 140px 0 70px;
+
+    @include MQ("md") {
+        padding: 110px 0 0;
+    }
 }
 
 .p-sample__about-content {
     display: flex;
     gap: 30px;
+
+    @include MQ("lg") {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
 }
 
 .p-sample__about-content-image {
@@ -267,6 +307,10 @@
     width: fit-content;
     padding: 10px 32px;
     margin: 135px auto 0;
+
+    @include MQ("lg") {
+        margin: 85px auto 0;
+    }
 }
 
 .p-sample__menu {
@@ -292,6 +336,10 @@
     font-family: $font-family-parisienne;
     font-weight: 400;
     color: var(--pink);
+
+    @include MQ("md") {
+        font-size: rem(48);
+    }
 }
 
 .p-sample__menu-swiper-image {
@@ -322,6 +370,10 @@
     padding: 10px 32px;
     margin: 100px auto 0;
     width: fit-content;
+
+    @include MQ("md") {
+        margin: 75px auto 0;
+    }
 }
 
 .p-sample__menu-container {
@@ -349,11 +401,21 @@
 
 .p-sample__contact {
     padding-top: 70px;
+
+    @include MQ("md") {
+        padding-top: 30px;
+    }
 }
 
 .p-sample__contact-content {
     display: flex;
     justify-content: space-between;
+
+    @include MQ("md") {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8px;
+    }
 }
 
 .p-sample__contact-content-image {
@@ -400,6 +462,10 @@
 
 .p-sample__blog {
     padding: 140px 0 100px;
+
+    @include MQ("md") {
+        padding: 60px 0 100px;
+    }
 }
 
 .p-sample__blog-title {
@@ -408,18 +474,32 @@
     font-family: $font-family-parisienne;
     font-weight: 400;
     color: var(--pink);
+
+    @include MQ("md") {
+        font-size: rem(48);
+    }
 }
 
 .p-sample__blog-list {
     display: flex;
     gap: 36px;
     margin-top: 93px;
+
+    @include MQ("md") {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 .p-sample__blog-list-item-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @include MQ("md") {
+        object-fit: cover;
+        height: 245px;
+    }
 }
 
 .p-sample__blog-list-item-card {
@@ -446,18 +526,34 @@
 
 .p-sample__blog-list-item--xl {
     width: min(100%, 534px);
+
+    @include MQ("md") {
+        width: min(100%, 100%);
+    }
 }
 
 .p-sample__blog-list-item--lg {
     width: min(100%, 508px);
+
+    @include MQ("md") {
+        width: min(100%, 100%);
+    }
 }
 
 .p-sample__blog-list-item--sm {
     width: min(100%, 242px);
+
+    @include MQ("md") {
+        width: min(100%, 100%);
+    }
 }
 
 .p-sample__blog-list-item--md {
     width: min(100%, 387px);
+
+    @include MQ("md") {
+        width: min(100%, 100%);
+    }
 }
 
 .p-sample__blog-list--flex {
@@ -465,9 +561,18 @@
     flex-direction: column;
     gap: 36px;
     width: 100%;
+
+    @include MQ("md") {
+        gap: 16px;
+    }
 }
 
 .p-sample__blog-list-item--flex {
     display: flex;
     gap: 36px;
+
+    @include MQ("md") {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
