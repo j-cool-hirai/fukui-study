@@ -1,0 +1,17 @@
+@use "../Global/" as *;
+
+.c-button {
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+    padding: 13px 32px;
+    border: 1px solid var(--gray);
+    text-align: center;
+    @include MQ(md) {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+.c-button__text {
+    color: var(--black);
+}
