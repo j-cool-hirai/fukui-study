@@ -1,0 +1,94 @@
+@use '../Global/' as *;
+
+.u-height-full {
+  height: 100%;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+.u-centerposition {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.u-visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+
+  clip-path: inset(50%);
+}
+
+.u-normal {
+  font-weight: normal;
+}
+
+.u-bold {
+  font-weight: bold;
+}
+
+.u-color\:white {
+  color: #fff;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-left {
+  text-align: left;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-fixed {
+  position: fixed;
+}
+
+.u-font-size\:smallish {
+  font-size: var(--font-size-smallish);
+}
+
+.u-font-size\:biggish {
+  font-size: var(--font-size-biggish);
+}
+
+.u-font-size\:big {
+  font-size: var(--font-size-big);
+}
+
+.u-pc {
+  display: block !important;
+
+  @include MQ(md) {
+    display: none !important;
+  }
+}
+
+.u-sp {
+  display: none !important;
+
+  @include MQ(md) {
+    display: block !important;
+  }
+}
