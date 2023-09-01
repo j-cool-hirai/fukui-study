@@ -1,0 +1,81 @@
+@use '../Global/' as *;
+
+.l-footer {
+  border-top: 1px solid var(--black-4);
+  padding: 70.5px 81.5px 70.5px 70.5px;
+  column-gap: 20px;
+
+  @include MQ(md) {
+    padding: 80px 49.5px 30px;
+  }
+}
+
+.l-footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 80px;
+
+  @include MQ(md) {
+    flex-direction: column;
+  }
+}
+
+.l-footer__head {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  @include MQ(md) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.l-footer__sub {
+  font-size: rem(12.8);
+  line-height: 23.7px;
+  letter-spacing: 3.2px;
+}
+
+.l-footer__main {
+  font-size: rem(32);
+  font-family: $font-family-deco;
+  font-weight: 400;
+  line-height: 59.2px;
+  letter-spacing: 3.2px;
+  text-transform: capitalize;
+}
+
+.l-footer__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 10px;
+
+  @include MQ(md) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.l-footer__link {
+  font-size: rem(12.8);
+  line-height: 23.7px;
+  letter-spacing: 3.2px;
+  text-transform: capitalize;
+}
+
+.l-footer__copy {
+  margin-top: 38px;
+  font-size: rem(12.8);
+  line-height: 23.7px;
+  letter-spacing: 3.2px;
+  text-align: right;
+
+  @include MQ(md) {
+    font-size: rem(11.2);
+    line-height: 20.7px;
+    text-align: center;
+  }
+}
