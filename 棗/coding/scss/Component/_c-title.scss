@@ -1,0 +1,15 @@
+@use "../Global/" as *;
+
+.c-title-ja {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: calc(41.4 / 22.4);
+    text-align: center;
+}
+
+.c-title-en {
+    font-size: 4em;
+    font-family: $font-family-title;
+    color: var(--pink);
+    text-align: center;
+}   
