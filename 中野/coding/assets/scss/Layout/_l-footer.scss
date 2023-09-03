@@ -1,0 +1,54 @@
+@use "../Global/" as *;
+
+.l-footer{
+    padding: 70px;
+    color: #555;
+    border-top: 1px solid #ccc;
+
+    @include MQ(md) {
+        padding: 80px 20px 20px;
+    }
+
+    &__wrapper{
+
+    }
+
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include MQ(md) {
+            flex-direction: column;
+        }
+    }
+
+    &__title{
+        font-family: $font-family-parisienne;
+        font-size: 2.5rem;
+        @include MQ(md) {
+            text-align: center;
+        }
+
+        & small{
+            font-family: $font-family-noto;
+            letter-spacing: 0.1em;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__copywriter{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @include MQ(md) {
+            justify-content: center;
+        }
+    }
+}

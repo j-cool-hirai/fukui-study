@@ -1,0 +1,85 @@
+@use "../Global/" as *;
+
+.c-button {
+    position: relative;
+    display:inline-block;
+    width: 176px;
+    height: 50px;
+    color: var(--black);
+    border:1px solid #ccc;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+
+  @include hover {
+    color: var(--white);
+    border-color: transparent;
+    transition-delay: .6s;
+}
+span{
+    display: block;
+    text-align: center;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+.bordertop{
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--pink);
+    transition: all .3s;
+  }
+  @include hover {
+    &::before{
+      height: 100%;
+      transition-delay: .4s;
+    }
+}
+  span{
+    &::before{
+      content: '';
+      position: absolute;
+      width:1px;
+      height: 0;
+      background-color: var(--pink);
+      transition: all .3s;
+      left:0;
+      top:0;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width:1px;
+      height: 0;
+      background-color: var(--pink);
+      transition: all .3s;
+      right:0;
+      top:0;
+    }
+  }
+
+  @include hover {
+    span{
+      &::before{
+        height: 100%;
+      }
+      &::after{
+        height: 100%;
+      }
+    }
+
+}
+}

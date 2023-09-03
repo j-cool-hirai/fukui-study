@@ -1,0 +1,14 @@
+@use "../Global/" as *;
+.c-heading{
+    font-family: 'Parisienne', cursive;
+    font-size: 6.4rem;
+    color: var(--pink);
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 80px;
+
+    @include MQ("md") {
+        font-size: 4.8rem;
+        margin-bottom: 40px;
+    }
+}
