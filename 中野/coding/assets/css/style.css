@@ -786,7 +786,7 @@ input[type=checkbox]:not(:checked) {
   position: relative; /*重要*/
   width: 100%;
   height: 100vh;
-  background-image: url("../../img/hero.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
 }
 .p-hero__title {
