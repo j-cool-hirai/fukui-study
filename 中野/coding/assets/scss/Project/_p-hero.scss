@@ -1,0 +1,37 @@
+@use "../Global/" as *;
+
+.p-hero{
+    position: relative; /*重要*/
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../img/hero.jpg");
+    background-size: cover;
+&__title {
+    font-size: 6.5rem;
+    font-family: $font-family-parisienne;
+    font-weight: normal;
+    color: var(--white);
+    text-shadow: 0 0 15px var(--white);
+    position: absolute; 
+    top:50%;
+    left:50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,-50%); 
+    width: 100%;
+
+    @include MQ("md") {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+        &--small{
+            font-family: $font-family-noto;
+            display: block;
+            font-size: 0.8rem;
+            letter-spacing: 0.58em;
+            margin-bottom: 20px;
+    }
+}
+}
+
+
