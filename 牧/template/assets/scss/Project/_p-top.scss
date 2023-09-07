@@ -1,0 +1,18 @@
+@use "../Global/" as *;
+
+//KV
+.p-kv__title{
+    color: $white;
+}
+.p-kv__tittle__text__sub,
+.p-kv__tittle__text__main{
+    display: block;
+    text-align: center;
+    line-height: 1.4;
+}
+.p-kv__tittle__text__sub{
+    font-size: 24px;
+}
+.p-kv__tittle__text__main{
+    font-size: 112px;
+}
