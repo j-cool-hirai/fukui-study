@@ -73,7 +73,7 @@
     font-size: var(--font-size-big);
 }
 
-.u-pc {
+.u-sp {
     display: block !important;
 
     @include MQ(md) {
@@ -81,10 +81,14 @@
     }
 }
 
-.u-sp {
+.u-pc {
     display: none !important;
 
     @include MQ(md) {
         display: block !important;
     }
+}
+
+.u-mg-none {
+    margin: 0;
 }
