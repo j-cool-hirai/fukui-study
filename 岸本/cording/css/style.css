@@ -536,6 +536,7 @@ input[type=checkbox]:not(:checked) {
 .l-header__item {
   margin: 20px auto 0;
   width: fit-content;
+  text-transform: uppercase;
 }
 
 .l-footer__inner {
@@ -599,6 +600,7 @@ input[type=checkbox]:not(:checked) {
   font-size: 12.8px;
   margin: 0 10px;
   line-height: 2.5;
+  text-transform: uppercase;
 }
 
 .l-footer__small {
@@ -626,10 +628,14 @@ input[type=checkbox]:not(:checked) {
 /* Component (prefix: c-)
     ------------------------------------------------*/
 .c-btn__common {
-  padding: 12px;
   border: 1px solid #ccc;
   width: 250px;
   font-size: 16px;
+  text-align: center;
+}
+.c-btn__common a {
+  padding: 12px;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .c-btn__common {
@@ -641,6 +647,11 @@ input[type=checkbox]:not(:checked) {
   color: #E2A2B1;
   font-size: 48px;
   font-family: "Parisienne", cursive;
+}
+@media screen and (min-width: 768px) {
+  .c-ttl__color {
+    font-size: 64px;
+  }
 }
 
 .c-ttl__normal {

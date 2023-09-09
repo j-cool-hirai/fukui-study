@@ -3,6 +3,9 @@
     color: #E2A2B1;
     font-size: 48px;
     font-family: 'Parisienne', cursive;
+    @include MQ(md) {
+        font-size: 64px;
+    }
 }
 
 .c-ttl__normal {
