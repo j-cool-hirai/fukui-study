@@ -1,0 +1,43 @@
+@use "../Global/" as *;
+
+.p-about__inner {
+    @include MQ(md) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.p-about__message {
+    @include MQ(md) {
+        width: 50%;
+        margin-left: 36px;
+    }
+}
+
+.p-about__txt {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    line-height: 32px;
+}
+
+.p-about__btn {
+    margin-top: 89px;
+}
+
+.p-about__img {
+    margin-top: 68px;
+    @include MQ(md) {
+        margin: auto 0;
+    }
+     img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        @include MQ(md) {
+            height: 400px;
+        }
+     }
+}
