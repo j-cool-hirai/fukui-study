@@ -955,6 +955,19 @@ input:checked + label + .p-global-nav > .p-global-nav__wrap {
   color: #555;
 }
 
+.p-section__textbox {
+  background: var(--white);
+  padding: 20PX;
+  -webkit-box-shadow: 5px 4px 10px 0px #cccccc;
+          box-shadow: 5px 4px 10px 0px #cccccc;
+  min-height: 130px;
+}
+
+.p-section__button {
+  display: block;
+  margin: 80px auto 0;
+}
+
 .p-card {
   display: grid;
   width: 100%;
@@ -1123,6 +1136,132 @@ input:checked + label + .p-global-nav > .p-global-nav__wrap {
   font-weight: 500;
 }
 
+/* ページネーションのスタイル */
+.your-class-page {
+  height: 10px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  width: 10px;
+}
+
+/* 現在表示されているページネーションのスタイル */
+.your-class-page.is-active {
+  background-color: var(--pink);
+  opacity: 1;
+}
+
+/* ページネーションの位置 */
+.your-class-pagination {
+  bottom: 1.5em;
+}
+
+/* ページネーション間の余白 */
+.your-class-pagination .p-section__item {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.splide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* スライドのサイズ調整 */
+.splide__slide img {
+  height: auto;
+  width: 100%;
+}
+
+.splide__pagination {
+  position: relative;
+  top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .splide__pagination {
+    top: 30px;
+  }
+}
+
+.splide__arrow--prev {
+  left: -3em;
+}
+@media screen and (max-width: 768px) {
+  .splide__arrow--prev {
+    left: -2em;
+    top: 10em;
+  }
+}
+
+.splide__arrow--next {
+  right: -3em;
+}
+@media screen and (max-width: 768px) {
+  .splide__arrow--next {
+    right: -2em;
+    top: 10em;
+  }
+}
+
+.splide__arrow {
+  background: none;
+}
+
+/*====================================================================
+Normal → Circle
+====================================================================*/
+.p-section__box {
+  position: relative;
+  cursor: pointer;
+}
+
+.p-section__box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.p-section__box:hover::before {
+  -webkit-animation: circle 0.75s;
+          animation: circle 0.75s;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
 /* Utility (prefix: u-)
     ------------------------------------------------*/
 .mt00 {
