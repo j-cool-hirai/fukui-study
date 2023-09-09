@@ -140,6 +140,35 @@ if (hash) {
   }
 }
 
+const options = {
+  perPage: 4, // 一度に表示するアイテム数
+  pagination: true, // ページネーションを有効にする
+  gap: 16,
+  updateOnMove: true,
+  type: 'loop',
+  classes: {
+    // ページネーション関連のクラスを追加したい場合
+    pagination: "splide__pagination your-class-pagination", // コンテナ要素
+    page: "splide__pagination__page your-class-page", // ページネーションのボタン要素
+  },
+  mediaQuery: "max", 
+  breakpoints: {
+    768: {
+      perPage: 2,
+      heightRatio: 1,
+    },
+    378: {
+      perPage: 1,
+      heightRatio: 1,
+    },
+  },
+}
+
+const splide = new Splide( '.splide',options );
+splide.mount();
+
+
+
 
 
 
