@@ -40,7 +40,8 @@
         <meta name="twitter:image:src" content="URL">
 
         <!-- css -->
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         
         <!-- 場合によって必要 -->
         <!-- <meta name="robots" content="noindex,nofollow"> -->
@@ -91,10 +92,59 @@
         <section class="p-section" id="menu">
             <h2 class="c-heading u-center">Menu</h2>
             <div class="p-section__inner">
-                <ul class="p-section__list">
-                </ul>
-                <a href="#" class="c-button bordertop"><span>メニュー一覧を見る</span></a>
-            </div>
+                <div class="splide">
+                    <div class="splide__track">
+                      <ul class="splide__list p-section__list">
+                        <li class="splide__slide p-section__item">
+                        <figure class="p-section__box">
+                          <img src="assets/img/menu_img_01.jpg" class="p-section__image">
+                        </figure>
+                          <figcaption class="p-section__textbox">
+                          <h3 class="p-section__title">ハンドケア / フットケア</h3>
+                          <p class="p-section__text">3,000 yen～</p>
+                        </figcaption>
+                        </li>
+                        <li class="splide__slide p-section__item">
+                            <figure class="p-section__box">
+                            <img src="assets/img/menu_img_02.jpg" class="p-section__image">
+                            </figure>
+                            <figcaption class="p-section__textbox">
+                            <h3 class="p-section__title">ウェディングメニュー</h3>
+                            <p class="p-section__text">12,000 yen～</p>
+                            </figcaption>
+                        </li>
+                        <li class="splide__slide p-section__item">
+                            <figure class="p-section__box">
+                            <img src="assets/img/menu_img_03.jpg" class="p-section__image">
+                            </figure>
+                            <figcaption class="p-section__textbox">
+                            <h3 class="p-section__title">ボディトリートメント</h3>
+                          <p class="p-section__text">8,000 yen～</p>
+                            </figcaption>
+                        </li>
+                        <li class="splide__slide p-section__item">
+                            <figure class="p-section__box">
+                            <img src="assets/img/menu_img_04.jpg" class="p-section__image">
+                            </figure>
+                            <figcaption class="p-section__textbox">
+                            <h3 class="p-section__title">フェイシャル</h3>
+                          <p class="p-section__text">5,000 yen～</p>
+                            </figcaption>
+                        </li>
+                        <li class="splide__slide p-section__item">
+                            <figure class="p-section__box">
+                            <img src="assets/img/menu_img_05.jpg" class="p-section__image">
+                            </figure>
+                            <figcaption class="p-section__textbox">
+                            <h3 class="p-section__title">ハンドケア / フットケア</h3>
+                          <p class="p-section__text">3,000 yen～</p>
+                            </figcaption>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="#" class="c-button bordertop p-section__button"><span>メニュー一覧を見る</span></a>
+                </div>
         </section>      
 
         <!-- reserve -->
@@ -215,6 +265,8 @@
 
 
           <!-- js -->
+          <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
           <script src="assets/js/main.js"></script>
     </body>
 </html>
+
