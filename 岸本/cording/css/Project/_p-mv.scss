@@ -1,9 +1,6 @@
 @use "../Global/" as *;
 .p-mv__inner {
-    height: 693px;
-    @include MQ(md) {
-        height: 800px;
-    }
+    height: 100vh;
 }
 
 .p-mv__img {
