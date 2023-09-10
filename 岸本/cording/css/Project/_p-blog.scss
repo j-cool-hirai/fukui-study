@@ -1,0 +1,23 @@
+@use "../Global/" as *;
+.p-blog__item {
+    max-width: 330px;
+    position: relative;
+    margin-top: 20px;
+}
+.p-blog__item-img {
+    width: 100%;
+
+}
+.p-blog__item-date {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(226,162,178,0.8);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 44px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

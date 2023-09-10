@@ -1,0 +1,18 @@
+@use "../Global/" as *;
+.c-ttl__color {
+    color: #E2A2B1;
+    font-size: 48px;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    @include MQ(md) {
+        font-size: 64px;
+    }
+}
+
+.c-ttl__normal {
+    font-size: 22.4px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3.2px;
+    line-height: 41.4px;
+}

@@ -1,0 +1,15 @@
+@use "../Global/" as *;
+.c-btn__common {
+    border: 1px solid #ccc;
+    width: 250px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+     a {
+        padding: 12px;
+        display: block;
+     }
+    @include MQ(md) {
+        width: 176px;
+    }
+}

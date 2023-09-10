@@ -16,29 +16,32 @@ body {
   }
 }
 
-h2 {
-  font-size: 10rem;
-}
+//h2 {
+//  font-size: 10rem;
+//}
 
 html {
   font-size: $basefontsize + px;
-  font-family: $font-family;
+//  font-family: $font-family;
+  font-family: 'Noto Serif JP';
   font-weight: 500;
+  color: $text;
 }
 
 body {
   overflow-x: hidden;
-  background-color: var(--blue-light2);
-  color: var(--black-dark);
+  background-color: var(--white);
+  color: var(--black-dark2);
 }
 
-main {
-  margin-top: 95px;
+//main {
+//  background-color: var(--blue-light2);
+//  margin-top: 95px;
 
-  @include MQ(md) {
-    margin-top: 75px;
-  }
-}
+//  @include MQ(md) {
+//    margin-top: 75px;
+//  }
+//}
 
 ul {
   margin: 0;
@@ -109,22 +112,6 @@ input[type="checkbox"]:not(:checked) {
   -webkit-appearance: none;
   border-radius: 3px;
   border: 1px solid var(--blue);
-}
-
-.pc-only{
-  display: block;
-
-  @include MQ("md") {
-    display: none;
-}
-}
-
-.sp-only{
-  display: none;
-
-  @include MQ("md") {
-    display: block;
-}
 }
 
 
