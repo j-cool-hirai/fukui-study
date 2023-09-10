@@ -90,7 +90,18 @@
                         <a href="#" class="c-button bordertop"><span>お店のご紹介</span></a>
                     </div>
                     <div class="p-flex__box p-flex__box--image">
-                    <img src="assets/img/about_img_01.jpg" class="p-flex__image">
+                    <picture class="p-flex-reverse__box p-flex-reverse__box--image">
+                        <!-- スマートフォン向けWebP画像 -->
+                        <source srcset="assets/img/about_sp_01.webp" media="(max-width: 768px)" type="image/webp">
+                        <!-- パソコン向けWebP画像 -->
+                        <source srcset="assets/img/about_pc_01.webp" type="image/webp">
+                        <!-- スマートフォン向けJPEG画像 -->
+                        <source srcset="assets/img/about_sp_01.jpg" media="(max-width: 768px)" type="image/jpeg">
+                        <!-- パソコン向けJPEG画像 -->
+                        <source srcset="assets/img/assets/img/about_pc_01.jpg" type="image/jpeg">
+                        <!-- どの条件にも一致しない場合、最後の画像が表示される -->
+                        <img src="assets/img/reserve_pc_01.jpg" class="p-flex__image">
+                    </picture>
                 </div>
                 </div>
                 </div>
