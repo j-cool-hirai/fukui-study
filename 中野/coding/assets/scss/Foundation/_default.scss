@@ -28,12 +28,11 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--white);
-  color: var(--black-dark2);
+  background-color: var(--blue-light2);
+  color: var(--black-dark);
 }
 
 main {
-  background-color: var(--blue-light2);
   margin-top: 95px;
 
   @include MQ(md) {
@@ -110,6 +109,22 @@ input[type="checkbox"]:not(:checked) {
   -webkit-appearance: none;
   border-radius: 3px;
   border: 1px solid var(--blue);
+}
+
+.pc-only{
+  display: block;
+
+  @include MQ("md") {
+    display: none;
+}
+}
+
+.sp-only{
+  display: none;
+
+  @include MQ("md") {
+    display: block;
+}
 }
 
 
