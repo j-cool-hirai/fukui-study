@@ -1,0 +1,41 @@
+@use "../Global/" as *;
+.p-contact__inner {
+    @include MQ(md) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.p-contact__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    @include MQ(md) {
+        width: 70%;
+    }
+}
+
+.p-contact__group {
+    @include MQ(md) {
+        margin: auto;
+    }
+}
+
+.p-contact__txt {
+    text-align: center;
+}
+
+.p-contact__tel {
+    font-size: 19.2px;
+    margin-top: 20px;
+}
+
+.p-contact__time {
+    font-size: 12.8px;
+    margin-top: 15px;
+}
+
+.p-contact__btn {
+    margin-top: 30px;
+}
