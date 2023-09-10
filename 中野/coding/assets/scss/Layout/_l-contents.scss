@@ -2,4 +2,9 @@
 
 .l-contents{
     margin: 0;
+    padding: 140px 0 0;
+
+    @include MQ("md") {
+        padding: 110px 0 0;
+    }
 }

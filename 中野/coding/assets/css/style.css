@@ -313,12 +313,12 @@ svg:not([fill]) {
 :root {
   --white: #ffffff;
   --black: #333333;
-  --black-dark: #000000;
+  --black-dark: #555555;
   --black-dark2: #2d2d2d;
   --blue: #1365e0;
   --blue-dark: #0040a0;
   --blue-light: #e6f0ff;
-  --blue-light2: #f3f8ff;
+  --blue-light2: #F8F9FA;
   --yellow: #f4b103;
   --pink: #E2A2B1;
 }
@@ -376,12 +376,11 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--white);
-  color: var(--black-dark2);
+  background-color: var(--blue-light2);
+  color: var(--black-dark);
 }
 
 main {
-  background-color: var(--blue-light2);
   margin-top: 95px;
 }
 @media screen and (max-width: 768px) {
@@ -457,6 +456,24 @@ input[type=checkbox]:not(:checked) {
   -webkit-appearance: none;
   border-radius: 3px;
   border: 1px solid var(--blue);
+}
+
+.pc-only {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp-only {
+    display: block;
+  }
 }
 
 /* Layout (prefix: l-)
@@ -542,6 +559,12 @@ input[type=checkbox]:not(:checked) {
 
 .l-contents {
   margin: 0;
+  padding: 140px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .l-contents {
+    padding: 110px 0 0;
+  }
 }
 
 /* Component (prefix: c-)
@@ -841,12 +864,12 @@ label {
   cursor: pointer;
 }
 
-span {
+label span {
   display: inline-block;
   width: 40px;
   height: 25px;
 }
-span i {
+label span i {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -855,11 +878,11 @@ span i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-span i:first-of-type {
+label span i:first-of-type {
   top: 22px;
   width: 50%;
 }
-span i:last-of-type {
+label span i:last-of-type {
   top: 29px;
   width: 30%;
 }
@@ -1262,6 +1285,114 @@ Normal → Circle
     opacity: 0;
   }
 }
+.p-flex {
+  margin: 0 0 162px;
+  font-family: "Noto Serif JP", serif;
+}
+
+.p-flex__inner {
+  padding: 0 4%;
+}
+
+.p-flex__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 36px;
+}
+@media screen and (max-width: 768px) {
+  .p-flex__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.p-flex__box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.p-flex__box--text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .p-flex__box--text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.p-flex__heading {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .p-flex__heading {
+    font-size: 1.5rem;
+  }
+}
+
+.p-flex__heading__span {
+  display: block;
+}
+
+.p-flex__text {
+  margin-bottom: 90px;
+  line-height: 2;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .p-flex__text {
+    margin-bottom: 50px;
+  }
+}
+
+.p-flex__box--image {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media screen and (max-width: 768px) {
+  .p-flex__box--image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.p-flex__image {
+  width: 100%;
+  display: block;
+}
+
 /* Utility (prefix: u-)
     ------------------------------------------------*/
 .mt00 {

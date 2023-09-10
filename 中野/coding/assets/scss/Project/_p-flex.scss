@@ -1,0 +1,69 @@
+@use "../Global/" as *;
+.p-flex{
+    margin: 0  0 162px;
+    font-family: $font-family-noto;
+}
+
+.p-flex__inner{
+    padding: 0 4%;
+}
+
+.p-flex__content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+
+    @include MQ("md") {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.p-flex__box{
+    flex: 1;
+}
+
+.p-flex__box--text{
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    @include MQ("md") {
+        order: 1;
+    }
+}
+
+.p-flex__heading{
+    font-size: 1.5rem;
+
+    @include MQ("md") {
+        font-size: 1.5rem;
+    }
+}
+.p-flex__heading__span{
+    display: block;
+}
+.p-flex__text{
+    margin-bottom: 90px;
+    line-height: 2;
+    font-weight: 500;
+
+    @include MQ("md") {
+        margin-bottom: 50px;
+    }
+}
+
+.p-flex__box--image{
+    order: 1;
+    @include MQ("md") {
+        order: 2;
+    }
+}
+
+.p-flex__image{
+    width: 100%;
+    display: block;
+}
