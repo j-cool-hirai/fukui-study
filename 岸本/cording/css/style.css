@@ -310,7 +310,7 @@ svg:not([fill]) {
   --white: #ffffff;
   --black: #333333;
   --black-dark: #000000;
-  --black-dark2: #2d2d2d;
+  --black-dark2: #555;
   --blue: #1365e0;
   --blue-dark: #0040a0;
   --blue-light: #e6f0ff;
@@ -785,6 +785,49 @@ input[type=checkbox]:not(:checked) {
   .p-about__img img {
     height: 400px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .p-contact__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.p-contact__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .p-contact__img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-contact__group {
+    margin: auto;
+  }
+}
+
+.p-contact__txt {
+  text-align: center;
+}
+
+.p-contact__tel {
+  font-size: 19.2px;
+  margin-top: 20px;
+}
+
+.p-contact__time {
+  font-size: 12.8px;
+  margin-top: 15px;
+}
+
+.p-contact__btn {
+  margin-top: 30px;
 }
 
 /* Utility (prefix: u-)
