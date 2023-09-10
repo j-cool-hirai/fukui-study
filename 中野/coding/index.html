@@ -156,10 +156,32 @@
         </section>      
 
         <!-- reserve -->
-        <section class="p-section" id="contact">
-            <h3>ご予約方法</h3>
-            <a href="#" class="c-button bordertop"><span>お問い合わせ</span></a>
-        </section>
+        <section class="p-flex-reverse" id="contact">
+            <div class="p-flex-reverse__inner">
+                <div class="p-flex-reverse__content">
+                    <div class="p-flex-reverse__box p-flex-reverse__box--text">
+                        <h2 class="p-flex-reverse__heading">ご予約方法</h2>
+                        <address class="p-flex-reverse__address">
+                            <a class="p-flex-reverse__tel" href="tel:03-1234-5678">TEL 03-1234-5678</a>
+                        </address>
+                            <p class="p-flex-reverse__text">(営業時間：<time datetime="10:00-20:00">10:00-20:00</time>)</p>
+                            <a href="#" class="c-button bordertop"><span>お問い合わせ</span></a>
+                        </div>            
+                        <picture class="p-flex-reverse__box p-flex-reverse__box--image">
+                            <!-- スマートフォン向けWebP画像 -->
+                            <source srcset="assets/img/reserve_sp_01.webp" media="(max-width: 768px)" type="image/webp">
+                            <!-- パソコン向けWebP画像 -->
+                            <source srcset="assets/img/reserve_pc_01.webp" type="image/webp">
+                            <!-- スマートフォン向けJPEG画像 -->
+                            <source srcset="assets/img/reserve_sp_01.jpg" media="(max-width: 768px)" type="image/jpeg">
+                            <!-- パソコン向けJPEG画像 -->
+                            <source srcset="assets/img/reserve_pc_01.jpg" type="image/jpeg">
+                            <!-- どの条件にも一致しない場合、最後の画像が表示される -->
+                            <img src="assets/img/reserve_pc_01.jpg" class="p-flex-reverse__image">
+                        </picture>
+                    </div>
+                </div>
+            </section>
 
         <!-- blog -->
         <section class="p-section" id="blog">
