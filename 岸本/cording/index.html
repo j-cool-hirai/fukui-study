@@ -21,6 +21,11 @@
       href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-2/css/5-2-2.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    
     <title>Document</title>
   </head>
   <body>
@@ -65,7 +70,7 @@
             </h2>
             <p class="p-about__txt">
               エステサロンビューティフルデイズは、<br />
-              がんばるあなたが<br class="u-sp">
+              がんばるあなたが<br class="u-sp" />
               ちょっと疲れた時に立ち寄れる<br />
               ほっとする時間をつくります。
             </p>
@@ -81,18 +86,55 @@
       <section class="l-section p-menu">
         <div class="l-inner p-menu__inner">
           <h2 class="c-ttl__color">Menu</h2>
+          <div class="swiper p-menu__slider">
+            <div class="swiper-wrapper p-menu__slider--wrapper">
+              <div class="swiper-slide p-menu__slider--item">
+                <img src="img/menu_01.webp" alt="" class="p-menu__item--img">
+                <div class="p-menu__item--txt">
+                  <p class="p-menu__item--ttl">ハンドケア / フットケア</p>
+                  <p class="p-menu__item--price">3,000 yen～</p>
+                </div>
+              </div>
+              <div class="swiper-slide p-menu__slider--item">
+                <img src="img/menu_02.webp" alt="" class="p-menu__item--img">
+                <div class="p-menu__item--txt">
+                  <p class="p-menu__item--ttl">ウェディングメニュー</p>
+                  <p class="p-menu__item--price">12,000 yen～</p>
+                </div>
+              </div>
+              <div class="swiper-slide p-menu__slider--item">
+                <img src="img/menu_03.webp" alt="" class="p-menu__item--img">
+                <div class="p-menu__item--txt">
+                  <p class="p-menu__item--ttl">ボディトリートメント</p>
+                  <p class="p-menu__item--price">8,000 yen～</p>
+                </div>
+              </div>
+              <div class="swiper-slide p-menu__slider--item">
+                <img src="img/menu_04.webp" alt="" class="p-menu__item--img">
+                <div class="p-menu__item--txt">
+                  <p class="p-menu__item--ttl">フェイシャル</p>
+                  <p class="p-menu__item--price">5,000 yen～</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
       <section class="l-section p-contact">
         <div class="l-inner p-contact__inner">
-          <img src="img/contact.webp" alt="" class="p-contact__img">
+          <img src="img/contact.webp" alt="" class="p-contact__img" />
           <div class="p-contact__group">
             <h2 class="c-ttl__normal p-contact__ttl">ご予約方法</h2>
             <div class="p-contact__txt">
               <p class="p-contact__tel u-uppercase">Tel 03-1234-5678</p>
               <p class="p-contact__time">（営業時間：10:00-20:00）</p>
             </div>
-            <div class="c-btn__common p-contact__btn"><a href="#">お問い合わせ</a></div>
+            <div class="c-btn__common p-contact__btn">
+              <a href="#">お問い合わせ</a>
+            </div>
           </div>
         </div>
       </section>
@@ -143,5 +185,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
