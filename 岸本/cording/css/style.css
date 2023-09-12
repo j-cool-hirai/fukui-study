@@ -830,6 +830,24 @@ input[type=checkbox]:not(:checked) {
   margin-top: 30px;
 }
 
+.p-menu__item--img {
+  width: 100%;
+}
+
+.p-menu__item--txt {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.p-menu__item--ttl {
+  font-size: 14.4px;
+}
+
+.p-menu__item--price {
+  font-size: 12.8px;
+  margin-top: 10px;
+}
+
 /* Utility (prefix: u-)
     ------------------------------------------------*/
 .u-height-full {
