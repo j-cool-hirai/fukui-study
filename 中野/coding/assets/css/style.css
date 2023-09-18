@@ -587,6 +587,7 @@ input:checked + label + .l-header-nav > .l-header-nav__wrap {
   font-size: 2rem;
   color: var(--white);
   text-shadow: 0 0 3px var(--white);
+  font-weight: normal;
 }
 
 .l-header-nav__item {
@@ -606,6 +607,10 @@ input:checked + label + .l-header-nav > .l-header-nav__wrap {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+}
+
+.l-header-nav__link--uppercase-letter {
+  text-transform: uppercase;
 }
 
 .l-footer {
