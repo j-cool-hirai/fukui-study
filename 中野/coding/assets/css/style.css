@@ -1193,7 +1193,7 @@ input:checked + label + .l-header-nav > .l-header-nav__wrap {
 }
 
 /* ページネーション間の余白 */
-.your-class-pagination .p-section__item {
+.your-class-pagination .p-slide__item {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -1243,62 +1243,6 @@ input:checked + label + .l-header-nav > .l-header-nav__wrap {
   background: none;
 }
 
-/*====================================================================
-Normal → Circle
-====================================================================*/
-.p-section__box {
-  position: relative;
-  cursor: pointer;
-}
-
-.p-section__box::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  display: block;
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-.p-section__box:hover::before {
-  -webkit-animation: circle 0.75s;
-          animation: circle 0.75s;
-}
-
-@-webkit-keyframes circle {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
-}
-
-@keyframes circle {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
-}
 .p-flex {
   margin: 0 0 162px;
   font-family: "Noto Serif JP", serif;
@@ -1528,7 +1472,7 @@ Normal → Circle
   color: #555;
 }
 
-.p-slide__textbox {
+.p-slide__text-box {
   background: var(--white);
   padding: 20PX;
   -webkit-box-shadow: 5px 4px 10px 0px #cccccc;
@@ -1541,6 +1485,60 @@ Normal → Circle
   margin: 80px auto 0;
 }
 
+.p-slide__box {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.p-slide__box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.p-slide__box:hover::before {
+  -webkit-animation: circle 0.8s;
+          animation: circle 0.8s;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 300%;
+    height: 300%;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 300%;
+    height: 300%;
+    opacity: 0;
+  }
+}
 /* Utility (prefix: u-)
     ------------------------------------------------*/
 .mt00 {

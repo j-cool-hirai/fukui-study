@@ -15,7 +15,7 @@
   bottom: 1.5em;
 }
 /* ページネーション間の余白 */
-.your-class-pagination .p-section__item {
+.your-class-pagination .p-slide__item {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -57,42 +57,4 @@
 
 .splide__arrow{
   background: none;
-}
-
-/*====================================================================
-Normal → Circle
-====================================================================*/
-.p-section__box {
-  position: relative;
-  cursor: pointer;
-}
-.p-section__box::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  display: block;
-  width: 0;
-  height: 0;
-  background: rgba(255,255,255,.2);
-  border-radius: 100%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-.p-section__box:hover::before {
-  animation: circle .75s;
-}
-@keyframes circle {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
 }

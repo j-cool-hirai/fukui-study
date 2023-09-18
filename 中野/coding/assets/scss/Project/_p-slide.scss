@@ -6,7 +6,7 @@
     }
 }
 
-.p-slide__textbox{
+.p-slide__text-box{
     background: var(--white);
     padding: 20PX;
     box-shadow: 5px 4px 10px 0px #cccccc;
@@ -17,3 +17,39 @@
     display: block;
     margin: 80px auto 0;
 }
+
+.p-slide__box {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .p-slide__box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .p-slide__box:hover::before {
+    animation: circle .80s;
+  }
+  @keyframes circle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 300%;
+      height: 300%;
+      opacity: 0;
+    }
+  }
