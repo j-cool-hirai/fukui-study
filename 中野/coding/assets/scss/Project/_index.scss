@@ -1,8 +1,7 @@
-@use 'p-sample';
+@use "../Global/" as *;
 @use 'p-hero';
-@use 'p-global-nav';
-@use 'p-section';
 @use 'p-card';
 @use 'p-splide';
 @use 'p-flex';
 @use 'p-flex-reverse';
+@use 'p-slide';

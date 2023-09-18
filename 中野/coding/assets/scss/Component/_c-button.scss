@@ -11,12 +11,39 @@
     outline: none;
     overflow: hidden;
 
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top:0;
+      z-index: 0;
+      width: 100%;
+      height: 0;
+      background-color: var(--pink);
+      transition: all .3s;
+    }
+    @include hover {
+      &::before{
+        height: 100%;
+        transition-delay: .4s;
+      }
+
+      .c-button__text{
+        &::before{
+          height: 100%;
+        }
+        &::after{
+          height: 100%;
+        }
+      }
+  }
+
   @include hover {
     color: var(--white);
     border-color: transparent;
     transition-delay: .6s;
 }
-span{
+.c-button__text{
     display: block;
     text-align: center;
     width: auto;
@@ -26,29 +53,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-}
 
-
-.bordertop{
-  &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top:0;
-    z-index: 0;
-    width: 100%;
-    height: 0;
-    background-color: var(--pink);
-    transition: all .3s;
-  }
-  @include hover {
-    &::before{
-      height: 100%;
-      transition-delay: .4s;
-    }
-}
-  span{
     &::before{
       content: '';
       position: absolute;
@@ -69,17 +74,5 @@ span{
       right:0;
       top:0;
     }
-  }
-
-  @include hover {
-    span{
-      &::before{
-        height: 100%;
-      }
-      &::after{
-        height: 100%;
-      }
-    }
-
 }
 }
