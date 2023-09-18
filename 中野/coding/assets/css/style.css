@@ -980,6 +980,7 @@ input:checked + label + .l-header-nav > .l-header-nav__wrap {
   .p-hero__title {
     font-size: 4rem;
     line-height: 1.2;
+    white-space: pre-line;
   }
 }
 
