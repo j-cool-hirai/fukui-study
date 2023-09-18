@@ -8,47 +8,43 @@
     @include MQ(md) {
         padding: 80px 20px 20px;
     }
+}
 
-    &__wrapper{
+.l-footer__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    @include MQ(md) {
+        flex-direction: column;
+    }
+}
+
+.l-footer__title{
+    font-family: $font-family-parisienne;
+    font-size: 2.5rem;
+    @include MQ(md) {
+        text-align: center;
     }
 
-    &__body{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @include MQ(md) {
-            flex-direction: column;
-        }
+    & small{
+        font-family: $font-family-noto;
+        letter-spacing: 0.1em;
+        font-size: 1.1rem;
     }
+}
 
-    &__title{
-        font-family: $font-family-parisienne;
-        font-size: 2.5rem;
-        @include MQ(md) {
-            text-align: center;
-        }
+.l-footer__list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-        & small{
-            font-family: $font-family-noto;
-            letter-spacing: 0.1em;
-            font-size: 1.1rem;
-        }
-    }
-
-    &__list{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-
-    &__copywriter{
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        @include MQ(md) {
-            justify-content: center;
-        }
+.l-footer__copywriter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    @include MQ(md) {
+        justify-content: center;
     }
 }

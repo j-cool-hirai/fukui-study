@@ -50,22 +50,22 @@
     <body>
         <!-- l-header -->
         <header class="l-header">
-            <input type="checkbox" id="hamburger">
-            <label for="hamburger">
-                <span>
-                    <i></i>
-                    <i></i>
+            <input type="checkbox" id="hamburger" class="l-header__input">
+            <label for="hamburger" class="l-header__label">
+                <span class="l-header__box">
+                    <i class="l-header__bar"></i>
+                    <i class="l-header__bar"></i>
                 </span>
             </label>
-            <nav class="p-global-nav">
-                <div class="p-global-nav__wrap">
-                    <p class="p-global-nav__logo mb20">Beautiful Days</p>
-                    <ul class="p-global-nav__list">
-                        <li class="p-global-nav__item"><a href="#" class="p-global-nav__link">TOP</a></li>
-                        <li class="p-global-nav__item"><a href="#about" class="p-global-nav__link">About</a></li>
-                        <li class="p-global-nav__item"><a href="#menu" class="p-global-nav__link">Menu</a></li>
-                        <li class="p-global-nav__item"><a href="#contact" class="p-global-nav__link">Contact</a></li>
-                        <li class="p-global-nav__item"><a href="#blog" class="p-global-nav__link">Blog</a></li>
+            <nav class="l-header-nav">
+                <div class="l-header-nav__wrap">
+                    <p class="l-header-nav__logo mb20">Beautiful Days</p>
+                    <ul class="l-header-nav__list">
+                        <li class="l-header-nav__item"><a href="#" class="l-header-nav__link">TOP</a></li>
+                        <li class="l-header-nav__item"><a href="#about" class="l-header-nav__link">About</a></li>
+                        <li class="l-header-nav__item"><a href="#menu" class="l-header-nav__link">Menu</a></li>
+                        <li class="l-header-nav__item"><a href="#contact" class="l-header-nav__link">Contact</a></li>
+                        <li class="l-header-nav__item"><a href="#blog" class="l-header-nav__link">Blog</a></li>
                     </ul>
                 </div>
             </nav>
@@ -81,13 +81,13 @@
         <main class="l-contents">
 
         <!-- about -->
-        <section class="p-flex" id="about">
+        <section class="l-section p-flex" id="about">
             <div class="p-flex__inner">
                 <div class="p-flex__content">
                     <div class="p-flex__box p-flex__box--text">
                         <h2 class="p-flex__heading u-center u-bold">白金台にある<span class="p-flex__heading__span">癒しのプライベート空間</span></h2>
                         <p class="p-flex__text u-center">エステサロンビューティフルデイズは、<br>がんばるあなたが<br class="sp-only">ちょっと疲れた時に立ち寄れる<br>ほっとする時間をつくります。</p>
-                        <a href="#" class="c-button bordertop"><span>お店のご紹介</span></a>
+                        <a href="#" class="c-button"><span class="c-button__text">お店のご紹介</span></a>
                     </div>
                     <div class="p-flex__box p-flex__box--image">
                     <picture class="p-flex-reverse__box p-flex-reverse__box--image">
@@ -108,66 +108,66 @@
         </section>
 
         <!-- menu -->
-        <section class="p-section" id="menu">
+        <section class="l-section p-slide" id="menu">
             <h2 class="c-heading u-center">Menu</h2>
-            <div class="p-section__inner">
+            <div class="l-section__inner">
                 <div class="splide">
                     <div class="splide__track">
-                      <ul class="splide__list p-section__list">
-                        <li class="splide__slide p-section__item">
-                        <figure class="p-section__box">
-                          <img src="assets/img/menu_img_01.jpg" class="p-section__image">
+                      <ul class="splide__list p-slide__list">
+                        <li class="splide__slide p-slide__item">
+                        <figure class="p-slide__box">
+                          <img src="assets/img/menu_img_01.jpg" class="p-slide__image">
                         </figure>
-                          <figcaption class="p-section__textbox">
-                          <h3 class="p-section__title">ハンドケア / フットケア</h3>
-                          <p class="p-section__text">3,000 yen～</p>
+                          <figcaption class="p-slide__textbox">
+                          <h3 class="p-slide__title">ハンドケア / フットケア</h3>
+                          <p class="p-slide__text">3,000 yen～</p>
                         </figcaption>
                         </li>
-                        <li class="splide__slide p-section__item">
-                            <figure class="p-section__box">
-                            <img src="assets/img/menu_img_02.jpg" class="p-section__image">
+                        <li class="splide__slide p-slide__item">
+                            <figure class="p-slide__box">
+                            <img src="assets/img/menu_img_02.jpg" class="p-slide__image">
                             </figure>
-                            <figcaption class="p-section__textbox">
-                            <h3 class="p-section__title">ウェディングメニュー</h3>
-                            <p class="p-section__text">12,000 yen～</p>
+                            <figcaption class="p-slide__textbox">
+                            <h3 class="p-slide__title">ウェディングメニュー</h3>
+                            <p class="p-slide__text">12,000 yen～</p>
                             </figcaption>
                         </li>
-                        <li class="splide__slide p-section__item">
-                            <figure class="p-section__box">
-                            <img src="assets/img/menu_img_03.jpg" class="p-section__image">
+                        <li class="splide__slide p-slide__item">
+                            <figure class="p-slide__box">
+                            <img src="assets/img/menu_img_03.jpg" class="p-slide__image">
                             </figure>
-                            <figcaption class="p-section__textbox">
-                            <h3 class="p-section__title">ボディトリートメント</h3>
-                          <p class="p-section__text">8,000 yen～</p>
+                            <figcaption class="p-slide__textbox">
+                            <h3 class="p-slide__title">ボディトリートメント</h3>
+                          <p class="p-slide__text">8,000 yen～</p>
                             </figcaption>
                         </li>
-                        <li class="splide__slide p-section__item">
-                            <figure class="p-section__box">
-                            <img src="assets/img/menu_img_04.jpg" class="p-section__image">
+                        <li class="splide__slide p-slide__item">
+                            <figure class="p-slide__box">
+                            <img src="assets/img/menu_img_04.jpg" class="p-slide__image">
                             </figure>
-                            <figcaption class="p-section__textbox">
-                            <h3 class="p-section__title">フェイシャル</h3>
-                          <p class="p-section__text">5,000 yen～</p>
+                            <figcaption class="p-slide__textbox">
+                            <h3 class="p-slide__title">フェイシャル</h3>
+                          <p class="p-slide__text">5,000 yen～</p>
                             </figcaption>
                         </li>
-                        <li class="splide__slide p-section__item">
-                            <figure class="p-section__box">
-                            <img src="assets/img/menu_img_05.jpg" class="p-section__image">
+                        <li class="splide__slide p-slide__item">
+                            <figure class="p-slide__box">
+                            <img src="assets/img/menu_img_05.jpg" class="p-slide__image">
                             </figure>
-                            <figcaption class="p-section__textbox">
-                            <h3 class="p-section__title">ハンドケア / フットケア</h3>
-                          <p class="p-section__text">3,000 yen～</p>
+                            <figcaption class="p-slide__textbox">
+                            <h3 class="p-slide__title">ハンドケア / フットケア</h3>
+                          <p class="p-slide__text">3,000 yen～</p>
                             </figcaption>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <a href="#" class="c-button bordertop p-section__button"><span>メニュー一覧を見る</span></a>
+                  <a href="#" class="c-button p-slide__button"><span class="c-button__text">メニュー一覧を見る</span></a>
                 </div>
         </section>      
 
         <!-- reserve -->
-        <section class="p-flex-reverse" id="contact">
+        <section class="l-section p-flex-reverse" id="contact">
             <div class="p-flex-reverse__inner">
                 <div class="p-flex-reverse__content">
                     <div class="p-flex-reverse__box p-flex-reverse__box--text">
@@ -176,7 +176,7 @@
                             <a class="p-flex-reverse__tel" href="tel:03-1234-5678">TEL 03-1234-5678</a>
                         </address>
                             <p class="p-flex-reverse__text">(営業時間：<time datetime="10:00-20:00">10:00-20:00</time>)</p>
-                            <a href="#" class="c-button bordertop"><span>お問い合わせ</span></a>
+                            <a href="#" class="c-button"><span class="c-button__text">お問い合わせ</span></a>
                         </div>            
                         <picture class="p-flex-reverse__box p-flex-reverse__box--image">
                             <!-- スマートフォン向けWebP画像 -->
@@ -195,9 +195,9 @@
             </section>
 
         <!-- blog -->
-        <section class="p-section" id="blog">
+        <section class="l-section" id="blog">
             <h2 class="c-heading u-center">Blog</h2>
-            <div class="p-section__inner">
+            <div class="l-section__inner">
                 <div class="p-card">
                     <article class="p-card__item p-card__item__1">
                         <picture>
@@ -285,7 +285,7 @@
     </main>
 
     <!-- トップ戻るボタン -->
-    <div id="js-scroll-top" class="scroll-top is-hide"><span class="dli-chevron-up"></span></div>
+    <div id="js-scroll-top" class="js-scroll-top"><span class="js-scroll-top__icon"></span></div>
 
         <!-- l-footer -->
         <footer class="l-footer">

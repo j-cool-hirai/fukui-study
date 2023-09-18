@@ -1,6 +1,6 @@
 @use "../Global/" as *;
 
-.scroll-top {
+.js-scroll-top {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -28,7 +28,7 @@
     pointer-events: none;
   }
 
-  .dli-chevron-up {
+  .js-scroll-top__icon {
     display: inline-block;
     vertical-align: text-top;
     color: var(--white);
