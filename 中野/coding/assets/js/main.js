@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const hamburgerCheckbox = document.getElementById('hamburger');
-  const hamburgerListWrap = document.querySelector('.p-global-nav__wrap');
-  const navLinks = document.querySelectorAll('.p-global-nav__link');
+  const hamburgerListWrap = document.querySelector('.l-header-nav__wrap');
+  const navLinks = document.querySelectorAll('.l-header-nav__link');
 
   // ナビゲーションリンクがクリックされたらメニューを閉じる
   navLinks.forEach(link => {

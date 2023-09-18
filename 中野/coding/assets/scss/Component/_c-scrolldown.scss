@@ -1,21 +1,8 @@
-
-
+@use "../Global/" as *;
 .c-scrolldown{
   position:absolute;
   bottom:10px;
   left:50%;
-
-  &__text{
-  position: absolute;
-  left:10px;
-  bottom:10px;
-  color: #eee;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  -ms-writing-mode: tb-rl;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-}
 &:before {
     content: "";
     /*描画位置*/
@@ -32,7 +19,6 @@
     circlemove 1.6s ease-in-out infinite,
     cirlemovehide 1.6s ease-out infinite;
 }
-
 /* 線の描写 */
 &:after{
     content:"";
@@ -44,7 +30,6 @@
     background:#eee;
   }
 }
-
 @keyframes circlemove{
       0%{bottom:45px;}
      100%{bottom:-5px;}
@@ -56,4 +41,14 @@
     80%{opacity:0.9;}
   100%{opacity:0;}
  }
+
+ .c-scrolldown__text{
+  position: absolute;
+  left:10px;
+  bottom:10px;
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+}
 
