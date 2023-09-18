@@ -32,14 +32,14 @@ body {
   color: var(--black-dark2);
 }
 
-main {
+/* main {
   background-color: var(--blue-light2);
-  /* margin-top: 95px; */
+  margin-top: 95px;
 
   @include MQ(md) {
-    /* margin-top: 75px; */
+    margin-top: 75px;
   }
-}
+} */
 
 ul {
   margin: 0;
