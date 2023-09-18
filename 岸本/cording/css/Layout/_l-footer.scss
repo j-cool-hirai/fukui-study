@@ -1,4 +1,8 @@
 @use '../Global/' as *;
+.l-footer {
+    border-top: 1px solid #ccc;
+}
+
 .l-footer__inner {
     margin: 80px auto 30px;
     @include MQ(md) {
