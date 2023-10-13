@@ -1,4 +1,4 @@
-@use '../Global/' as *;
+@use "../Global/" as *;
 
 html,
 body {
@@ -16,10 +16,6 @@ body {
   }
 }
 
-h2 {
-  font-size: 10rem;
-}
-
 html {
   font-size: $basefontsize + px;
   font-family: $font-family;
@@ -29,16 +25,7 @@ html {
 body {
   overflow-x: hidden;
   background-color: var(--white);
-  color: var(--black-dark2);
-}
-
-main {
-  background-color: var(--blue-light2);
-  margin-top: 95px;
-
-  @include MQ(md) {
-    margin-top: 75px;
-  }
+  color: var(--black-2);
 }
 
 ul {
@@ -58,7 +45,7 @@ a {
   text-decoration: none;
 }
 
-*[lang='en'] {
+*[lang="en"] {
   font-weight: 400;
   font-style: normal;
 }
@@ -71,28 +58,28 @@ img {
   vertical-align: top;
 }
 
-input[type='text']:focus,
-input[type='date']:focus,
-input[type='tel']:focus,
-input[type='email']:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
 select:focus,
 textarea:focus {
   outline: solid 2px var(--blue);
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   width: 16px;
   height: 16px;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   -webkit-appearance: none;
   border-radius: 50%;
   border: 1px solid var(--blue);
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 60%;
     height: 60%;
@@ -101,13 +88,19 @@ input[type='radio'] {
   }
 }
 
-input[type='radio']:checked:before {
+input[type="radio"]:checked:before {
   background: var(--blue);
 }
 
 // checkboxの枠線の色を変えるデフォルト状態から
-input[type='checkbox']:not(:checked) {
+input[type="checkbox"]:not(:checked) {
   -webkit-appearance: none;
   border-radius: 3px;
   border: 1px solid var(--blue);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
