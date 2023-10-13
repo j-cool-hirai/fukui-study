@@ -6,4 +6,12 @@
     height: 100dvh;
     position: relative;
     overflow: hidden;
-}
+}.l-about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include MQ(lg) {
+      flex-direction: column;
+      gap: 68px;
+    }
+  }
