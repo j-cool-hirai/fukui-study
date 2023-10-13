@@ -26,6 +26,7 @@
     font-size: 2rem;
     font-family: $font-family-title;
     color: var(--white);
+    @include text-shadow;
 }
 .l-header-nav__list {
     display: flex;
