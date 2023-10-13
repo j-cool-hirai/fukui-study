@@ -1,121 +1,261 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>白金台にある癒しのエステサロン Beautiful Days</title>
 
-    <script src="./assets/js/header.js" defer="defer"></script>
-    <script src="./assets/js/smooth.js" defer="defer"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
-    <header class="l-header" data-hamb="close">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>白金台にある癒しのエステサロン Beautiful Days</title>
+  <meta name="description" content="白金台にある癒しのエステサロン Beautiful Days">
+</head>
+
+<body>
+    <header id="top" class="l-header" data-hamb="close">
       <div class="l-header__inner">
-        <h1 class="l-header__head">
-          <p class="l-header__title">beautiful days</p>
-          <!-- /.l-header__title -->
-          <p class="l-header__sub">白金台にある癒しのエステサロン</p>
-          <!-- /.l-header__sub -->
-        </h1>
-        <!-- /.l-header__head -->
+        <h1 class="l-header__head"><span class="l-header__title">Beautiful Days</span><span
+            class="l-header__sub">白金台にある癒しのエステサロン</span></h1>
         <div class="l-header__scroll">
-          <p class="l-header__scroll--text">scroll</p>
-          <!-- /.l-header__scroll--text -->
-        </div>
-        <!-- /.l-header__scroll -->
-        <button class="l-header__btn js-hambButton"></button>
-        <!-- /.l-header__btn -->
+          <p class="l-header__scroll--text">Scroll</p>
+        </div><button class="l-header__btn"></button>
         <div class="l-header__panel">
           <nav class="l-header__nav">
-            <p class="l-header__nav-name">beautiful days</p>
-            <!-- /.l-header__nav-name -->
+            <p class="l-header__nav-name">Beautiful Days</p>
             <ul class="l-header__list">
-              <li class="l-header__item">
-                <a href="#" class="l-header__link">top</a>
-                <!-- /.l-header__link -->
-              </li>
-              <!-- /.l-header__item -->
-              <li class="l-header__item">
-                <a href="#about" class="l-header__link">about</a>
-                <!-- /.l-header__link -->
-              </li>
-              <!-- /.l-header__item -->
-              <li class="l-header__item">
-                <a href="#menu" class="l-header__link">menu</a>
-                <!-- /.l-header__link -->
-              </li>
-              <!-- /.l-header__item -->
-              <li class="l-header__item">
-                <a href="#contact" class="l-header__link">contact</a>
-                <!-- /.l-header__link -->
-              </li>
-              <!-- /.l-header__item -->
-              <li class="l-header__item">
-                <a href="#blog" class="l-header__link">blog</a>
-                <!-- /.l-header__link -->
-              </li>
-              <!-- /.l-header__item -->
+              <li class="l-header__item"><a href="#top" class="l-header__link">Top</a></li>
+              <li class="l-header__item"><a href="#about" class="l-header__link">About</a></li>
+              <li class="l-header__item"><a href="#menu" class="l-header__link">Menu</a></li>
+              <li class="l-header__item"><a href="#contact" class="l-header__link">Contact</a></li>
+              <li class="l-header__item"><a href="#blog" class="l-header__link">Blog</a></li>
             </ul>
-            <!-- /.l-header__list -->
           </nav>
-          <!-- /.l-header__nav -->
         </div>
-        <!-- /.l-header__panel -->
-      </div>
-      <!-- /.l-header__inner -->
-      <a href="#" class="l-header__totop"></a>
-      <!-- /.l-header__totop -->
+      </div><a href="#top" class="l-header__totop"></a>
     </header>
-    <!-- /.l-header -->
-
-    <main></main>
-
+    <main>
+      <section class="l-wrapper p-lead" id="about">
+        <div class="p-lead__inner">
+          <div class="c-column p-lead__content">
+            <div class="p-lead__top">
+              <h2 class="p-lead__main"> 白金台にある<span class="c-paragraph">癒しのプライベート空間</span></h2>
+              <p class="p-lead__text"> エステサロンビューティフルデイズは、 <span class="c-paragraph">がんばるあなたがちょっと疲れた時に立ち寄れる</span><span
+                  class="c-paragraph">ほっとする時間をつくります。</span></p>
+            </div><a href="" class="c-link">お店のご紹介</a>
+          </div>
+          <picture class="p-lead__image">
+            <source media="(max-width: 767px)" srcset="/_nuxt/lead-img.9357ed96.jpg"><img
+              src="/_nuxt/lead-img.9357ed96.jpg" alt="">
+          </picture>
+        </div>
+      </section>
+      <section class="l-wrapper p-menu" id="menu">
+        <div class="p-menu__inner">
+          <h2 class="c-heading">Menu</h2>
+          <div class="p-menu__container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="1">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_02.86b80435.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ウェディングメニュー</p>
+                    <p class="p-menu__text">12,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="2">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_03.6e522185.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ボディトリートメント</p>
+                    <p class="p-menu__text">8,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="3">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_04.cb225474.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">フェイシャル</p>
+                    <p class="p-menu__text">5,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="4">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_05.f785156c.jpeg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">メイク / セット</p>
+                    <p class="p-menu__text">3,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-menu__card" data-swiper-slide-index="0">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_01.f8855f4d.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ハンドケア / フットケア</p>
+                    <p class="p-menu__text">3,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-menu__card" data-swiper-slide-index="1">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_02.86b80435.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ウェディングメニュー</p>
+                    <p class="p-menu__text">12,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-menu__card" data-swiper-slide-index="2">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_03.6e522185.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ボディトリートメント</p>
+                    <p class="p-menu__text">8,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-menu__card" data-swiper-slide-index="3">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_04.cb225474.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">フェイシャル</p>
+                    <p class="p-menu__text">5,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-menu__card" data-swiper-slide-index="4">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_05.f785156c.jpeg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">メイク / セット</p>
+                    <p class="p-menu__text">3,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="0">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_01.f8855f4d.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ハンドケア / フットケア</p>
+                    <p class="p-menu__text">3,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="1">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_02.86b80435.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ウェディングメニュー</p>
+                    <p class="p-menu__text">12,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="2">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_03.6e522185.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">ボディトリートメント</p>
+                    <p class="p-menu__text">8,000 yen～</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate p-menu__card" data-swiper-slide-index="3">
+                  <figure class="p-menu__image"><img src="/_nuxt/Image_04.cb225474.jpg" alt="Card Image"></figure>
+                  <div class="p-menu__content">
+                    <p class="p-menu__title">フェイシャル</p>
+                    <p class="p-menu__text">5,000 yen～</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div><a href="" class="c-link p-menu__link">メニュー一覧を見る</a>
+        </div>
+      </section>
+      <section class="l-wrapper p-contact" id="contact">
+        <div class="p-contact__inner">
+          <div class="c-column p-contact__content">
+            <div class="p-contact__top">
+              <h2 class="p-contact__main">ご予約方法</h2>
+              <p class="p-contact__text"> TEL<a class="p-contact__text--link" href="tel:0312345678">03-1234-5678</a></p>
+              <p class="p-contact__time">（営業時間：10:00-20:00）</p>
+            </div><a href="" class="c-link">お問い合わせ</a>
+          </div>
+          <picture class="p-contact__image">
+            <source media="(max-width: 767px)" srcset="/_nuxt/contact-img.358e6119.jpg"><img
+              src="/_nuxt/contact-img.358e6119.jpg" alt="">
+          </picture>
+        </div>
+      </section>
+      <section class="l-wrapper p-blog" id="blog">
+        <h2 class="c-heading">Blog</h2>
+        <div class="p-blog__inner">
+          <div class="p-blog__left">
+            <article class="p-blog__content">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">お得なコスメキャンペーンを実施中！</h3>
+                <p class="p-blog__text"> エステサロンビューティフルデイズの春のコスメキャンペーンがスタートしました。 </p><a href="" class="p-blog__link">Read
+                  More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_01.011ecee1.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2021-03-04">2021.3.4</time>
+              </div>
+            </article>
+          </div>
+          <div class="p-blog__right">
+            <article class="p-blog__content --large">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">新春のごあいさつ</h3><a href="" class="p-blog__link">Read More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_02.d20365ca.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2021-01-04">2021.1.4</time>
+              </div>
+            </article>
+            <article class="p-blog__content --small">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">本日のお客様</h3><a href="" class="p-blog__link">Read More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_03.7b764e2d.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2020-12-25">2020.12.25</time>
+              </div>
+            </article>
+            <article class="p-blog__content --medium">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">クリスマスイブの準備はおすみですか？</h3><a href="" class="p-blog__link">Read More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_04.cedeaaa5.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2020-12-24">2020.12.24</time>
+              </div>
+            </article>
+            <article class="p-blog__content --medium">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">美容に良い食べ物のご紹介！</h3><a href="" class="p-blog__link">Read More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_05.9d7a8387.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2020-11-09">2020.11.9</time>
+              </div>
+            </article>
+            <article class="p-blog__content --small">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">夏のイチオシコスメ！</h3><a href="" class="p-blog__link">Read More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_06.970ec061.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2020-08-09">2020.08.09</time>
+              </div>
+            </article>
+            <article class="p-blog__content --large">
+              <div class="p-blog__main">
+                <h3 class="p-blog__title">ブログはじめました</h3><a href="" class="p-blog__link">Read More</a>
+              </div>
+              <div class="p-blog__thumb">
+                <picture class="p-blog__image"><img src="/_nuxt/blog_07.63b05ee2.jpg" alt=""></picture><time
+                  class="p-blog__date" datetime="2020-07-07">2020.07.07</time>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="l-footer">
       <div class="l-footer__inner">
         <nav class="l-footer__nav">
-          <h2 class="l-footer__head">
-            <p class="l-footer__sub">白金台の癒しのエステサロン</p>
-            <!-- /.l-footer__sub -->
-            <p class="l-footer__main">beautiful days</p>
-            <!-- /.l-footer__main -->
-          </h2>
-          <!-- /.l-footer__head -->
+          <h2 class="l-footer__head"><span class="l-footer__sub">白金台の癒しのエステサロン</span><span
+              class="l-footer__main">Beautiful Days</span></h2>
           <ul class="l-footer__list">
-            <li class="l-footer__item">
-              <a href="#" class="l-footer__link">top</a>
-              <!-- /.l-footer__link -->
-            </li>
-            <!-- /.l-footer__item -->
-            <li class="l-footer__item">
-              <a href="#about" class="l-footer__link">about</a>
-              <!-- /.l-footer__link -->
-            </li>
-            <!-- /.l-footer__item -->
-            <li class="l-footer__item">
-              <a href="#menu" class="l-footer__link">menu</a>
-              <!-- /.l-footer__link -->
-            </li>
-            <!-- /.l-footer__item -->
-            <li class="l-footer__item">
-              <a href="#contact" class="l-footer__link">contact</a>
-              <!-- /.l-footer__link -->
-            </li>
-            <!-- /.l-footer__item -->
-            <li class="l-footer__item">
-              <a href="#blog" class="l-footer__link">blog</a>
-              <!-- /.l-footer__link -->
-            </li>
-            <!-- /.l-footer__item -->
+            <li class="l-footer__item"><a href="#" class="l-footer__link">Top</a></li>
+            <li class="l-footer__item"><a href="#about" class="l-footer__link">About</a></li>
+            <li class="l-footer__item"><a href="#menu" class="l-footer__link">Menu</a></li>
+            <li class="l-footer__item"><a href="#contact" class="l-footer__link">Contact</a></li>
+            <li class="l-footer__item"><a href="#blog" class="l-footer__link">Blog</a></li>
           </ul>
-          <!-- /.l-footer__list -->
         </nav>
-        <!-- /.l-footer__nav -->
         <p class="l-footer__copy">© Beautiful days</p>
-        <!-- /.l-footer__copy -->
       </div>
-      <!-- /.l-footer__inner -->
     </footer>
-    <!-- /.l-footer -->
 </body>
 </html>

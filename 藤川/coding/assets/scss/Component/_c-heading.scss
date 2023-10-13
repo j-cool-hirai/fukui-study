@@ -1,0 +1,10 @@
+@use "../Global/" as *;
+
+.c-heading {
+  font-family: $font-family-deco;
+  font-size: rem(64);
+  font-weight: 400;
+  line-height: 118.4px;
+  color: var(--pink);
+  text-align: center;
+}
