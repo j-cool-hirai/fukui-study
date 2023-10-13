@@ -1,8 +1,9 @@
-@use '../Global/' as *;
+@use "../Global/" as *;
 
 .l-footer {
   border-top: 1px solid var(--black-4);
   padding: 70.5px 81.5px 70.5px 70.5px;
+  margin-top: 162px;
   column-gap: 20px;
 
   @include MQ(md) {
@@ -44,7 +45,6 @@
   font-weight: 400;
   line-height: 59.2px;
   letter-spacing: 3.2px;
-  text-transform: capitalize;
 }
 
 .l-footer__list {
@@ -63,7 +63,6 @@
   font-size: rem(12.8);
   line-height: 23.7px;
   letter-spacing: 3.2px;
-  text-transform: capitalize;
 }
 
 .l-footer__copy {

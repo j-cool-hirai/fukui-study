@@ -1,0 +1,50 @@
+@use "../Global/" as *;
+
+.p-menu__link {
+  margin-top: 111px;
+}
+
+.p-menu__card {
+  box-shadow: 5px 0 10px #ccc;
+}
+
+.p-menu__image {
+}
+
+.p-menu__content {
+  padding: 20px;
+}
+
+.p-menu__title {
+  font-size: rem(12.8);
+  line-height: 23.7px;
+  letter-spacing: 3.2px;
+}
+
+.p-menu__text {
+  font-size: rem(14.4);
+  line-height: 26.6px;
+  letter-spacing: 3.2px;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--black-4) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--pink) !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: #999999;
+}
+
+.swiper-button-prev {
+}
