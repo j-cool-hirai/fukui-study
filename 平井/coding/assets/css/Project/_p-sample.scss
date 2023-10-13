@@ -23,25 +23,17 @@
 }
 
 .p-sample__header-title-sub {
-    font-size: rem(25);
+    font-size: myClamp(13, 25);
     color: #ffffff;
     text-align: center;
-
-    @include MQ("md") {
-        font-size: rem(13);
-    }
 }
 
 .p-sample__header-title-main {
-    font-size: rem(115);
+    font-size: myClamp(64, 115);
     color: #ffffff;
     font-family: $font-family-parisienne;
     font-weight: 400;
     text-align: center;
-
-    @include MQ("md") {
-        font-size: rem(64);
-    }
 }
 
 .p-sample__header-button {
@@ -213,13 +205,12 @@
 }
 
 .p-sample__footer-title-main {
-    font-size: rem(32);
+    font-size: myClamp(24, 32);
     font-family: $font-family-parisienne;
     font-weight: 400;
     margin-top: 12px;
 
     @include MQ("md") {
-        font-size: rem(24);
         margin-top: 8px;
     }
 }
@@ -242,12 +233,11 @@
 }
 
 .p-sample__footer-menu-copyright {
-    font-size: rem(13);
+    font-size: myClamp(11, 13);
     text-align: right;
     margin-top: 75px;
 
     @include MQ("md") {
-        font-size: rem(11);
         text-align: center;
         margin-top: 40px;
     }
@@ -326,15 +316,11 @@
 }
 
 .p-sample__menu-title {
-    font-size: rem(64);
+    font-size: myClamp(48, 64);
     text-align: center;
     font-family: $font-family-parisienne;
     font-weight: 400;
     color: var(--pink);
-
-    @include MQ("md") {
-        font-size: rem(48);
-    }
 }
 
 .p-sample__menu-swiper-image {
@@ -465,15 +451,11 @@
 }
 
 .p-sample__blog-title {
-    font-size: rem(64);
+    font-size: myClamp(48, 64);
     text-align: center;
     font-family: $font-family-parisienne;
     font-weight: 400;
     color: var(--pink);
-
-    @include MQ("md") {
-        font-size: rem(48);
-    }
 }
 
 .p-sample__blog-list {
