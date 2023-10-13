@@ -6,3 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburgerNav.classList.toggle('is-active');
     }, false);
 },false);
+
+const swiper = new Swiper('.js-menu__slider', {
+    loop: true,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+})
