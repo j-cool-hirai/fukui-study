@@ -1,0 +1,64 @@
+/*************
+reserve*******/
+
+.p-reserve {
+    margin: 0 auto;
+    padding-top: 144px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+}
+
+@media screen and (max-width:768px) {
+    .p-reserve {
+        display: block;
+        padding-top: 85px;
+        width: 100%
+    }
+}
+
+.p-reserve__right {
+    text-align: center;
+    width: 30%;
+}
+
+@media screen and (max-width:768px) {
+    .p-reserve__right {
+        width: 100%;
+    }
+}
+
+.p-reserve__right--tel {
+    font-size: 1.2em;
+}
+
+.p-reserve__right--wrap {
+    margin: 30px auto 0;
+}
+
+.p-reserve__right--wrap-button {
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555555;
+}
+
+.p-reserve__left {
+    background-image: url(../images/makepareto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    width: 62%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:768px) {
+    .p-reserve__left {
+        width: 100%;
+        margin: 0 0 32px 0;
+    }
+}
