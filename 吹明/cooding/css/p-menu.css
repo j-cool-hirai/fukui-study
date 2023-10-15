@@ -1,0 +1,80 @@
+/**********
+menu*******/
+
+.p-menu {
+    padding: 133px 0 0px;
+}
+
+@media screen and (max-width:768px) {
+    .p-menu {
+        padding-top: 48px;
+    }
+}
+
+.p-menu__list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    .p-menu__list {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.p-menu__list--wrap {
+    margin: 0 5px;
+}
+
+.p-menu__list--wrap-link {
+    text-decoration: none;
+    color: #555555;
+}
+
+.p-menu__list--wrap-box {
+    padding: 20px;
+    box-shadow: 5px 0 10px #ccc;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:1020px) {
+    .p-menu__list--wrap-box {
+        height: 127px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .p-menu__list--wrap-box {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .p-menu__list--wrap-box {
+        height: 127px;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .p-menu__list--wrap-box {
+        height: auto;
+    }
+}
+
+.p-menu__list--wrap-box-menu {
+    margin: auto;
+    font-weight: normal;
+}
+
+.p-menu__list--wrap-box-place {
+    margin: auto;
+}
+
+.p-menu__wrap {
+    margin: 100px auto 0;
+    text-align: center;
+}
+

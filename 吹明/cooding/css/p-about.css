@@ -1,0 +1,71 @@
+/**********
+about*****/
+
+.p-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 148px;
+    width: 90%;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .p-about {
+        flex-direction: column-reverse;
+        padding-top: 55px;
+        gap: 0px;;
+        width: 100%
+    }
+}
+
+.p-about__left {
+    background-image: url(../images/shop-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
+@media screen and (max-width:768px) {
+    .p-about__left {
+        width: 100%;
+        min-height: 250px;
+    }
+}
+
+.p-about__right {
+    text-align: center;
+    width: 40%;
+}
+
+.p-about__right--title  {
+    padding-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .p-about__right {
+        width: 100%;
+        margin: 0 0 43px 0;
+        line-height: 2em;
+    }
+}
+
+.p-about__right--wrap {
+    margin: 43px auto 0;
+}
+
+.p-about__right--button {
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555555;
+}
+
+
