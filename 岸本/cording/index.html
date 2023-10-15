@@ -27,7 +27,7 @@
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
 
-    <title>Document</title>
+    <title>Beautiful Days</title>
   </head>
   <body>
     <header>
@@ -40,11 +40,11 @@
               </div>
               <div class="l-header__menu">
                 <ul class="l-header__list">
-                  <li class="l-header__item"><a href="#">Top</a></li>
-                  <li class="l-header__item"><a href="#">About</a></li>
-                  <li class="l-header__item"><a href="#">Menu</a></li>
-                  <li class="l-header__item"><a href="#">Contact</a></li>
-                  <li class="l-header__item"><a href="#">Blog</a></li>
+                  <li class="l-header__item"><a href="#top">Top</a></li>
+                  <li class="l-header__item"><a href="#about">About</a></li>
+                  <li class="l-header__item"><a href="#menu">Menu</a></li>
+                  <li class="l-header__item"><a href="#contact">Contact</a></li>
+                  <li class="l-header__item"><a href="#blog">Blog</a></li>
                 </ul>
               </div>
             </nav>
@@ -63,7 +63,7 @@
           </div>
         </div>
       </section>
-      <section class="l-section p-about">
+      <section class="l-section p-about" id="about">
         <div class="l-inner p-about__inner">
           <div class="p-about__message">
             <h2 class="c-ttl__normal">
@@ -84,7 +84,7 @@
           </div>
         </div>
       </section>
-      <section class="l-section p-menu">
+      <section class="l-section p-menu" id="menu">
         <div class="l-inner p-menu__inner">
           <h2 class="c-ttl__color">Menu</h2>
           <div class="swiper p-menu__slider">
@@ -127,7 +127,7 @@
           <a href="#"><span>メニュー一覧を見る</span></a>
         </div>
       </section>
-      <section class="l-section p-contact">
+      <section class="l-section p-contact" id="contact">
         <div class="l-inner p-contact__inner">
           <img src="img/contact.webp" alt="" class="p-contact__img" />
           <div class="p-contact__group">
@@ -142,57 +142,106 @@
           </div>
         </div>
       </section>
-      <section class="l-section p-blog">
+      <section class="l-section p-blog" id="blog">
         <div class="l-inner p-blog__inner">
           <h2 class="c-ttl__color p-blog__ttl">Blog</h2>
           <div class="p-blog__list">
+            <div class="p-blog__list-left">
               <article class="p-blog__item  p-blog__img01">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_01.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2021.3.4</time></h3>
+                  <span class="p-blog__item-txt">
+                    <time>2021.3.4</time>
+                    <h3 class="p-blog__item-ttl">お得なコスメキャンペーンを実施中！</h3>
+                    エステサロンビューティフルデイズの春のコスメキャンペーンがスタートしました。...
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2021.3.4</time></h4>
+                  </span>
                 </a>
               </article>
+            </div>
+              <div class="p-blog__list-right">
               <article class="p-blog__item p-blog__img02">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_02.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2021.1.4</time></h3>
+                  <span class="p-blog__item-txt">
+                    <h3 class="p-blog__item-ttl">新春のごあいさつ</h3>
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2021.1.4</time></h4>
+                </span>
                 </a>
               </article>
               <article class="p-blog__item p-blog__img03">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_03.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2020.12.25</time></h3>
+                  <span class="p-blog__item-txt">
+                    <h3 class="p-blog__item-ttl">本日のお客様</h3>
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2020.12.25</time></h4>
+                </span>
                 </a>
               </article>
               <article class="p-blog__item p-blog__img04">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_04.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2020.12.24</time></h3>
+                  <span class="p-blog__item-txt">
+                    <h3 class="p-blog__item-ttl">クリスマスイブの準備はおすみですか</h3>
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2020.12.24</time></h4>
+                </span>
                 </a>
               </article>
               <article class="p-blog__item p-blog__img05">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_05.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2020.11.09</time></h3>
+                  <span class="p-blog__item-txt">
+                    <h3 class="p-blog__item-ttl">美容に良い食べ物のご紹介</h3>
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2020.11.09</time></h4>
+                </span>
                 </a>
               </article>
               <article class="p-blog__item p-blog__img06">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_06.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2020.8.9</time></h3>
+                  <span class="p-blog__item-txt">
+                    <h3 class="p-blog__item-ttl">夏のイチオシコスメ！</h3>
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2020.8.9</time></h4>
+                </span>
                 </a>
               </article>
               <article class="p-blog__item p-blog__img07">
-                <a href="#">
+                <a href="#" class="p-blog__item-link">
+                  <span class="p-blog__item-mask">
                   <img src="img/blog_07.webp" alt="" class="p-blog__item-img" />
-                  <h3 class="p-blog__item-date"><time>2021.3.3</time></h3>
+                  <span class="p-blog__item-txt">
+                    <h3 class="p-blog__item-ttl">ブログはじめました</h3>
+                    <span class="p-blog__item-btn">Read More</span>
+                  </span>
+                  <h4 class="p-blog__item-date"><time>2021.3.3</time></h4>
+                </span>
                 </a>
               </article>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="l-footer">
+    <footer class="l-footer" id="footer">
+      <div id="page-top" class="c-btn__top"><a href="#" class="c-btn__top-link"><span class="c-btn__top-up"></span></a></div>
       <div class="l-inner">
         <div class="l-footer__nav">
           <div class="l-footer__inner">
@@ -208,11 +257,11 @@
               <div class="l-footer__menu">
                 <nav>
                   <ul class="l-footer__list">
-                    <li class="l-footer__item"><a href="#">Top</a></li>
-                    <li class="l-footer__item"><a href="#">About</a></li>
-                    <li class="l-footer__item"><a href="#">Menu</a></li>
-                    <li class="l-footer__item"><a href="#">Contact</a></li>
-                    <li class="l-footer__item"><a href="#">Blog</a></li>
+                    <li class="l-footer__item"><a href="#top">Top</a></li>
+                    <li class="l-footer__item"><a href="#about">About</a></li>
+                    <li class="l-footer__item"><a href="#menu">Menu</a></li>
+                    <li class="l-footer__item"><a href="#contact">Contact</a></li>
+                    <li class="l-footer__item"><a href="#blog">Blog</a></li>
                   </ul>
                 </nav>
               </div>
@@ -230,5 +279,6 @@
     <script src="js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/topbtn.js"></script>
   </body>
 </html>

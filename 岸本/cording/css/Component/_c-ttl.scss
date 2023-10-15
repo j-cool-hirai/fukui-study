@@ -1,6 +1,6 @@
 @use "../Global/" as *;
 .c-ttl__color {
-    color: #E2A2B1;
+    color: var(--pink);
     font-size: 48px;
     font-family: 'Parisienne', cursive;
     text-align: center;
