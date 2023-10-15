@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: "Noto Serif JP",serif;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #555555;
+    line-height: 1.8em;
+    letter-spacing: 0.3em;
+}
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+    color: #E2A2B1;
+    font-size: 64px;
+    margin-bottom: 93px;
+    font-family: "Parisienne",serif;
+}
+
