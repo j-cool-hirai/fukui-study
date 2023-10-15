@@ -1,6 +1,6 @@
 @use "../Global/" as *;
 .c-btn__common {
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray);
     width: 250px;
     font-size: 16px;
     text-align: center;
@@ -11,7 +11,7 @@
     /*はみ出す背景色を隠す*/
  	overflow: hidden;
     &:hover {
-        color:#fff;
+        color:var(--white);
         border-color: transparent;
         /*色の変化を遅らせる*/
         transition-delay: .6s;
@@ -38,7 +38,7 @@
     width:1px;
     height: 0;
     /*線の形状*/
-    background: #E2A2B1;
+    background: var(--pink);
     /*アニメーションの設定*/
 	transition: all .3s;
 }
@@ -70,7 +70,7 @@
         /*背景の形状*/
         width: 100%;
         height: 0;
-        background:#E2A2B1;
+        background:var(--pink);
         /*アニメーションの設定*/
         transition: all .3s;
     }
@@ -79,4 +79,72 @@
         /*0.4秒遅れてアニメーション*/
         transition-delay: .4s;
     }
+}
+
+.c-btn__top-link {
+    display: flex;
+	justify-content:center;
+	align-items:center;
+	background:var(--pink);
+	width: 60px;
+	height: 55px;
+	color: var(--white);
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+    &:hover {
+        background-color: var(--gray-dark);
+    }
+}
+
+.c-btn__top {
+    position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+    &.UpMove {
+        animation: UpAnime 0.5s forwards;
+    }
+    &.DownMove{
+        animation: DownAnime 0.5s forwards;
+    }
+}
+@keyframes UpAnime{
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+@keyframes DownAnime{
+    from {
+        opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+      transform: translateY(100px);
+    }
+}
+
+.c-btn__top-up {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--white);
+    line-height: 1;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.3em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(25%) rotate(-45deg);
 }
