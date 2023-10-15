@@ -5,12 +5,12 @@
 .p-blog__ttl {
     margin-bottom: 90px;
 }
-.p-blog__list {
+/* .p-blog__list {
     @include MQ(md) {
         display: grid; 
         grid-template-columns: 1.2fr 1.2fr 0.5fr 1fr; 
         grid-template-rows: 1fr 1fr; 
-        gap: 10px 10px; 
+        gap: 20px 20px; 
         grid-template-areas: 
             "A B C D"
             "A E F G"; 
@@ -22,10 +22,24 @@
         .p-blog__img06 { grid-area: F; }
         .p-blog__img07 { grid-area: G; }
     }
+} */
+.p-blog__list {
+    @include MQ(md) {
+        display: flex;
+        max-height: 750px;
+    }
+}
+.p-blog__list-right {
+    margin-top: 20px;
+    @include MQ(md) {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+    }
 }
 .p-blog__item {
     max-width: 420px;
-    height: 220px;
     position: relative;
     margin: 20px auto 0;
     &:first-child {
@@ -33,13 +47,41 @@
     }
     @include MQ(md) {
         margin-top: 0px;
+        &:nth-child(1),&:nth-child(6) {
+            width: 40%;
+        }
+        &:nth-child(2),&:nth-child(5) {
+            width: 20%;
+        }
+        &:nth-child(3),&:nth-child(4) {
+            width: 30%;
+        }
+        &:nth-child(4),&:nth-child(5),&:nth-child(6) {
+            margin-top: 20px;
+        }
     }
     &:first-child {
-        height: 350px;
+        height: 100%;
         @include MQ(md) {
             height: auto;
         }
     }
+}
+.p-blog__list-left {
+    @include MQ(md) {
+        width: 30%;
+        margin-right: 20px;
+    }
+    .p-blog__item {
+        @include MQ(md) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.p-blog__item-link {
+    display: flex;
+    height: 100%;
 }
 .p-blog__item-img {
     width: 100%;
@@ -50,7 +92,7 @@
     position: absolute;
     bottom: 0;
     background-color: rgba(226,162,178,0.8);
-    color: #fff;
+    color: var(--white);
     text-align: center;
     width: 100%;
     height: 44px;
@@ -58,4 +100,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.p-blog__item-mask {
+    position:relative;/*背景色の基点となる位置を定義*/
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+    &::before {
+        content:"";
+        position: absolute;
+        z-index: 2;
+        left:0;
+        top:0;
+        opacity:0;/*透過0*/
+        transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+        transform: translateY(100%);
+        background:var(--pink);/*背景色*/
+        width:100%;
+        height: 100%;	
+    }
+}
+.p-blog__item:hover .p-blog__item-mask::before{/*hoverした時の変化*/
+	opacity:1;/*透過なしに変化*/
+	transform: translateY(0);
+}
+.p-blog__item-txt {/*画像の上のテキスト*/
+	position: absolute;
+	opacity:0;/*透過0*/
+	transition: .5s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+	z-index:3;/*テキストを前面に出す*/
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%,-50%);/*テキストの位置中央指定*/
+	color: var(--white);/*テキストの色を変えたい場合はここを修正*/
+    line-height: 1.5;/*行の高さを1.5にする*/
+    text-align: center;
+    font-size: 14px;
+}
+.p-blog__item:hover .p-blog__item-txt{/*hoverした時の変化*/
+	opacity:1;/*透過なしに変化*/
+}
+.p-blog__item-ttl {
+    margin-bottom: 20px;
+}
+.p-blog__item-btn {
+    border: 1px solid var(--white);
+    display: block;
+    width: 121px;
+    padding: 5px;
+    margin: 20px auto 0;
 }
