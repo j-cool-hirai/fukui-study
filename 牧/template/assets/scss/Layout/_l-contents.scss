@@ -2,7 +2,7 @@
 
 .l-contents{
     width: 100%;
-    background-color: $bg;
+    background-color: var(--lightgray);
 }
 
 .l-contents__inner{
@@ -10,6 +10,8 @@
     margin: 0 auto;
 }
 
-.l-section{
-    padding: 60px 0;
+@include MQ("md"){
+    .l-contents__inner{
+        padding: 0 16px;
+    }
 }

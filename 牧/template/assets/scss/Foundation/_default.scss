@@ -18,15 +18,16 @@ body {
 
 html {
   font-size: $basefontsize + px;
-  font-family: 'Noto Serif JP';
-  font-weight: 500;
-  color: $text;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+  color: var(--black);
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
   background-color: var(--white);
-  color: var(--black-dark2);
+  color: var(--black);
 }
 
 ul {
@@ -64,9 +65,6 @@ input[type="date"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
 select:focus,
-textarea:focus {
-  outline: solid 2px var(--blue);
-}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -77,7 +75,6 @@ input[type="radio"] {
 input[type="radio"] {
   -webkit-appearance: none;
   border-radius: 50%;
-  border: 1px solid var(--blue);
 
   &::before {
     content: "";
@@ -87,17 +84,6 @@ input[type="radio"] {
     margin: 20% auto;
     border-radius: 50%;
   }
-}
-
-input[type="radio"]:checked:before {
-  background: var(--blue);
-}
-
-// checkboxの枠線の色を変えるデフォルト状態から
-input[type="checkbox"]:not(:checked) {
-  -webkit-appearance: none;
-  border-radius: 3px;
-  border: 1px solid var(--blue);
 }
 
 

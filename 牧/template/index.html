@@ -1,103 +1,343 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>白金台にある癒しのエステサロン ビューティフルデイズ</title>
-    <meta name="description" content="白金台にある癒しのプライベート空間。エステサロンビューティフルデイズは、がんばるあなたがちょっと疲れた時に立ち寄れるほっとする時間をつくります。">
+        <title>白金台にある癒しのエステサロン ビューティフルデイズ</title>
+        <meta name="description" content="白金台にある癒しのプライベート空間。エステサロンビューティフルデイズは、がんばるあなたがちょっと疲れた時に立ち寄れるほっとする時間をつくります。">
+        <meta property="og:url" content="#">
+        <meta property="og:title" content="白金台にある癒しのエステサロン ビューティフルデイズ">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="白金台にある癒しのプライベート空間。エステサロンビューティフルデイズは、がんばるあなたがちょっと疲れた時に立ち寄れるほっとする時間をつくります。">
+        <meta property="og:image" content="#">
+        <meta property="og:site_name" content="白金台にある癒しのエステサロン ビューティフルデイズ">
+        <meta property="og:locale" content="ja_JP">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@beautiful_days">
+        <meta name="twitter:title" content="白金台にある癒しのエステサロン ビューティフルデイズ">
+        <meta name="twitter:description" content="白金台にある癒しのプライベート空間。エステサロンビューティフルデイズは、がんばるあなたがちょっと疲れた時に立ち寄れるほっとする時間をつくります。">
 
-    <meta property="og:url" content="#">
-    <meta property="og:title" content="白金台にある癒しのエステサロン ビューティフルデイズ">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="白金台にある癒しのプライベート空間。エステサロンビューティフルデイズは、がんばるあなたがちょっと疲れた時に立ち寄れるほっとする時間をつくります。">
-    <meta property="og:image" content="#">
-    <meta property="og:site_name" content="白金台にある癒しのエステサロン ビューティフルデイズ">
-    <meta property="og:locale" content="ja_JP">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@beautiful_days">
-    <meta name="twitter:title" content="白金台にある癒しのエステサロン ビューティフルデイズ">
-    <meta name="twitter:description" content="白金台にある癒しのプライベート空間。エステサロンビューティフルデイズは、がんばるあなたがちょっと疲れた時に立ち寄れるほっとする時間をつくります。">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/js/script.js"></script>
-</head>
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-<body class="l-body">
-    <header class="l-header">
-        <div class="l-header__hamburger">
-            <span class="l-header__hamburger__top"></span>
-            <span class="l-header__hamburger__bottom"></span>
-        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </head>
 
-        <nav class="l-header__nav js-header__nav">
-            <ul class="l-header__nav__list">
-                <li class="l-header__nav__item u-Parisienne">Beautiful Days</li>
-                <li class="l-header__nav__item"><a href="#top">TOP</a></li>
-                <li class="l-header__nav__item"><a href="#about">ABOUT</a></li>
-                <li class="l-header__nav__item"><a href="#menu">MENU</a></li>
-                <li class="l-header__nav__item"><a href="#contact">CONTACT</a></li>
-                <li class="l-header__nav__item"><a href="#blog">BLOG</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body class="l-body">
+        <header class="l-header">
+            <div class="l-header__hamburger js-header__hamburger">
+                <span class="l-header__hamburger__top"></span>
+                <span class="l-header__hamburger__bottom"></span>
+            </div><!-- /l-header__hamburger -->
 
-    <main class="l-contents">
-        <div class="l-contents__inner">
+            <nav class="l-header__nav js-header__nav">
+                <div class="l-header__nav__inner">
+                    <h2 class="l-header__nav__title u-Parisienne">Beautiful Days</h2>
+                    <ul class="l-header__nav__list">
+                        <li class="l-header__nav__item"><a href="#top">Top</a></li>
+                        <li class="l-header__nav__item"><a href="#about">About</a></li>
+                        <li class="l-header__nav__item"><a href="#menu">Menu</a></li>
+                        <li class="l-header__nav__item"><a href="#contact">Contact</a></li>
+                        <li class="l-header__nav__item"><a href="#blog">Blog</a></li>
+                    </ul><!-- /l-header__nav__list -->
+                </div>
+            </nav><!-- /l-header_nav -->
+        </header><!-- /l-header -->
+
+        <main class="l-contents">
 
             <section class="p-kv" id="top">
                 <h1 class="p-kv__title">
-                    <span class="p-kv__tittle__text__sub">白金台にある癒しのエステサロン</span>
-                    <span class="p-kv__tittle__text__main u-Parisienne">Beautiful Days</span>
+                    <span class="p-kv__title__text__sub">白金台にある癒しのエステサロン</span>
+                    <span class="p-kv__title__text__main u-Parisienne">Beautiful Days</span>
                 </h1>
-            </section>
+                <div class="p-kv__scroll">
+                    <span class="p-kv__scroll__parts">Scroll</span>
+                </div><!-- /l-header__scroll -->
+            </section><!-- /p-kv -->
+            
+            <div class="l-contents__inner">
 
-            <section class="l-section p-about" id="about">
-                <h2 class="c-title">白金台にある<br>癒しのプライベート空間</h2>
-                <div class="c-button__wrap">
-                    <a href="#" class="c-button">お店のご紹介</a>
-                </div>
-            </section>
+                <section class="l-section p-about" id="about">
+                    <div class="p-about__flexbox">
+                        <div class="p-about__img__wrap">
+                            <img src="assets/img/top/about@2x.png" alt="" class="p-about__img">
+                        </div><!-- /p-about__img__wrap -->
+                        <div class="p-about__text__wrap">
+                            <div class="p-about__text__container">
+                                <h2 class="c-title">白金台にある<br>癒しのプライベート空間</h2>
+                                <p class="p-about__text">エステサロンビューティフルデイズは、<br>
+                                    がんばるあなたがちょっと疲れた時に立ち寄れる<br>
+                                    ほっとする時間をつくります。</p>
+                            </div><!-- /p-about__text__container -->
+                            <div class="c-button__wrap">
+                                <a href="#" class="c-button c-button__hover"><span class="c-button__inner">お店のご紹介</span></a>
+                            </div><!-- c-button__wrap -->
+                        </div><!-- /p-about__text__wrap -->
+                    </div><!-- /p-about__flexbox -->
+                </section><!-- /p-about -->
 
-            <section class="l-section p-menu" id="menu">
-                <h2 class="c-title__eg u-Parisienne">Menu</h2>
-                <div class="c-button__wrap">
-                    <a href="#" class="c-button">メニュー一覧を見る</a>
-                </div>
-            </section>
+                <section class="l-section p-menu" id="menu">
+                    <h2 class="c-title__eg u-Parisienne">Menu</h2>
+                    <div class="p-menu__list__wrap">
+                        <ul class="p-menu__list js-menu__list">
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_01@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">ハンドケア / フットケア</h3>
+                                        <p class="p-menu__list__text">3,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
 
-            <section class="l-section p-contact" id="contact">
-                <h2 class="c-title">ご予約方法</h2>
-                <div class="c-button__wrap">
-                    <a href="#" class="c-button">お問い合わせ</a>
-                </div>
-            </section>
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_02@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">ウェディングメニュー</h3>
+                                        <p class="p-menu__list__text">12,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
 
-            <section class="l-section p-blog" id="blog">
-                <h2 class="c-title__eg u-Parisienne">Blog</h2>
-            </section>
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_03@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">ボディトリートメント</h3>
+                                        <p class="p-menu__list__text">8,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
 
-        </div><!-- /l-contents__inner -->
-    </main>
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_04@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">フェイシャル</h3>
+                                        <p class="p-menu__list__text">5,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
 
-    <footer class="l-footer">
-        <div class="l-footer__inner">
-            <div class="l-footer__text">
-                <p class="l-footer__text__sub">白金台にある癒しのエステサロン</p>
-                <p class="l-footer__text__main u-Parisienne">Beautiful Days</span>
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_01@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">ハンドケア / フットケア</h3>
+                                        <p class="p-menu__list__text">3,000 yen～</p>
+                                    </div>
+                                </div>    
+                            </li>
+
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_02@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">ウェディングメニュー</h3>
+                                        <p class="p-menu__list__text">12,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_03@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">ボディトリートメント</h3>
+                                        <p class="p-menu__list__text">8,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="p-menu__list__item">
+                                <div class="p-menu__list__item__inner">
+                                    <img src="assets/img/top/menu_04@2x.png" alt="" class="p-menu__list__img">
+                                    <div class="p-menu__text__wrap">
+                                        <h3 class="p-menu__list__title">フェイシャル</h3>
+                                        <p class="p-menu__list__text">5,000 yen～</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul><!-- p-menu__list -->
+                    </div><!-- /p-menu__list__wrap -->
+                    <div class="c-button__wrap">
+                        <a href="#" class="c-button c-button__hover"><span class="c-button__inner">メニュー一覧を見る</span></a>
+                    </div><!-- c-button__wrap -->
+                </section><!-- /p-menu -->
+
+                <section class="l-section p-contact" id="contact">
+                    <div class="p-contact__flexbox">
+                        <div class="p-contact__text__wrap">
+                            <h2 class="c-title">ご予約方法</h2>
+                            <p class="p-contact__tel">TEL&nbsp;<a href="tel:0312345678" class="p-contact__tel__link">03-1234-5678</a></p>
+                            <p class="p-contact__time">（営業時間：10:00-20:00）</p>
+                            <div class="c-button__wrap">
+                                <a href="#" class="c-button c-button__hover"><span class="c-button__inner">お問い合わせ</span></a>
+                            </div><!-- c-button__wrap -->
+                        </div><!-- /p-contact__text__wrap -->
+                        <div class="p-contact__img__wrap">
+                            <picture>
+                                <source media="(max-width: 768px)" data-srcset="assets/img/top/contact_sp@2x.png" srcset="assets/img/top/contact_sp@2x.png">
+                                <img src="assets/img/top/contact@2x.png" alt="" class="p-contact__img">
+                            </picture>
+                        </div><!-- /p-contact__img__wrap -->
+                    </div><!-- /p-contact__flexbox -->
+                </section><!-- /p-contact -->
+
+                <section class="l-section p-blog" id="blog">
+                    <h2 class="c-title__eg u-Parisienne">Blog</h2>
+                    
+                    <div class="p-blog__flex">
+                        <article class="p-blog__item p-blog__item__large">
+                            <a href="#" class="p-blog__item__link">
+                                <figure class="p-blog__item__inner">
+                                    <img src="assets/img/top/blog_01@2x.png" alt="" class="p-blog__item__img">
+                                    <p class="p-blog__item__time">2021.3.4</p>
+                                </figure><!-- /p-blog__item__inner -->
+                                <div class="p-blog__item__detail">
+                                    <p>2021.3.4</p>
+                                    <h3 class="p-blog__item__title">お得なコスメキャンペーンを実施中！</h3>
+                                    <p class="p-blog__item__text">エステサロンビューティフルデイズの春のコスメキャンペーンがスタートしました。...</p>
+                                    <div class="p-blog__item__detail__link__wrap">
+                                        <p class="p-blog__item__detail__button">Read More</p>
+                                    </div><!-- /p-blog__item__detail__link__wrap -->
+                                </div><!-- /p-blog__item__detail -->
+                            </a><!-- /p-blog__item__link -->
+                        </article><!-- /p-blog__item -->
+
+                        <div class="p-blog__grid">
+
+                            <article class="p-blog__item">
+                                <a href="#" class="p-blog__item__link">
+                                    <figure class="p-blog__item__inner">
+                                        <img src="assets/img/top/blog_02@2x.png" alt="" class="p-blog__item__img">
+                                        <p class="p-blog__item__time">2021.1.4</p>
+                                    </figure><!-- /p-blog__item__inner -->
+                                    <div class="p-blog__item__detail">
+                                        <h3 class="p-blog__item__title">新春のごあいさつ</h3>
+                                        <div class="p-blog__item__detail__link__wrap">
+                                            <p class="p-blog__item__detail__button">Read More</p>
+                                        </div><!-- /p-blog__item__detail__link__wrap -->
+                                    </div><!-- /p-blog__item__detail -->
+                                </a><!-- /p-blog__item__link -->
+                            </article><!-- p-blog__item -->
+
+                            <article class="p-blog__item">
+                                <a href="#" class="p-blog__item__link">
+                                    <figure class="p-blog__item__inner">
+                                        <img src="assets/img/top/blog_03@2x.png" alt="" class="p-blog__item__img">
+                                        <p class="p-blog__item__time">2020.12.25</p>
+                                    </figure><!-- /p-blog__item__inner -->
+                                    <div class="p-blog__item__detail">
+                                        <h3 class="p-blog__item__title">本日のお客様</h3>
+                                        <div class="p-blog__item__detail__link__wrap">
+                                            <p class="p-blog__item__detail__button">Read More</p>
+                                        </div><!-- /p-blog__item__detail__link__wrap -->
+                                    </div><!-- /p-blog__item__detail -->
+                                </a><!-- /p-blog__item__link -->
+                            </article><!-- p-blog__item -->
+
+                            <article class="p-blog__item">
+                                <a href="#" class="p-blog__item__link">
+                                    <figure class="p-blog__item__inner">
+                                        <img src="assets/img/top/blog_04@2x.png" alt="" class="p-blog__item__img">
+                                        <p class="p-blog__item__time">2020.12.24</p>
+                                    </figure><!-- /p-blog__item__inner -->
+                                    <div class="p-blog__item__detail">
+                                        <h3 class="p-blog__item__title">クリスマスイブの準備はおすみですか？</h3>
+                                        <div class="p-blog__item__detail__link__wrap">
+                                            <p class="p-blog__item__detail__button">Read More</p>
+                                        </div><!-- /p-blog__item__detail__link__wrap -->
+                                    </div><!-- /p-blog__item__detail -->
+                                </a><!-- /p-blog__item__link -->
+                            </article><!-- p-blog__item -->
+
+                            <article class="p-blog__item">
+                                <a href="#" class="p-blog__item__link">
+                                    <figure class="p-blog__item__inner">
+                                        <img src="assets/img/top/blog_05@2x.png" alt="" class="p-blog__item__img">
+                                        <p class="p-blog__item__time">2020.11.09</p>
+                                    </figure><!-- /p-blog__item__inner -->
+                                    <div class="p-blog__item__detail">
+                                        <h3 class="p-blog__item__title">美容に良い食べ物のご紹介！</h3>
+                                        <div class="p-blog__item__detail__link__wrap">
+                                            <p class="p-blog__item__detail__button">Read More</p>
+                                        </div><!-- /p-blog__item__detail__link__wrap -->
+                                    </div><!-- /p-blog__item__detail -->
+                                </a><!-- /p-blog__item__link -->
+                            </article><!-- p-blog__item -->
+
+                            <article class="p-blog__item">
+                                <a href="#" class="p-blog__item__link">
+                                    <figure class="p-blog__item__inner">
+                                        <img src="assets/img/top/blog_06@2x.png" alt="" class="p-blog__item__img">
+                                        <p class="p-blog__item__time">2020.8.9</p>
+                                    </figure><!-- /p-blog__item__inner -->
+                                    <div class="p-blog__item__detail">
+                                        <h3 class="p-blog__item__title">夏のイチオシコスメ！</h3>
+                                        <div class="p-blog__item__detail__link__wrap">
+                                            <a href="" class="p-blog__item__detail__link">ReadMore</a>
+                                        </div><!-- /p-blog__item__detail__link__wrap -->
+                                    </div><!-- /p-blog__item__detail -->
+                                </a><!-- /p-blog__item__link -->
+                            </article><!-- p-blog__item -->
+
+                            <article class="p-blog__item">
+                                <a href="#" class="p-blog__item__link">
+                                    <figure class="p-blog__item__inner">
+                                        <img src="assets/img/top/blog_07@2x.png" alt="" class="p-blog__item__img">
+                                        <p class="p-blog__item__time">2020.7.7</p>
+                                    </figure><!-- /p-blog__item__inner -->
+                                    <div class="p-blog__item__detail">
+                                        <h3 class="p-blog__item__title">ブログはじめました</h3>
+                                        <div class="p-blog__item__link__detail__wrap">
+                                            <a href="" class="p-blog__item__detail__link">ReadMore</a>
+                                        </div><!-- /p-blog__item__detail__link__wrap -->
+                                    </div><!-- /p-blog__item__detail -->
+                                </a><!-- /p-blog__item__link -->
+                            </article><!-- p-blog__item -->
+
+                        </div><!-- /p-blog__grid -->
+
+                    </div><!-- p-blog__flex -->
+                </section><!-- /p-blog -->
+
+            </div><!-- /l-contents__inner -->
+        </main><!-- /l-contents -->
+
+        <footer class="l-footer">
+            <div class="l-footer__inner">
+                <div class="l-footer__text">
+                    <p class="l-footer__text__sub">白金台にある癒しのエステサロン</p>
+                    <p class="l-footer__text__main u-Parisienne">Beautiful Days</span>
+                </div><!-- l-footer__text -->
+                <div class="l-footer__menu">
+                    <ul class="l-footer__menu__list">
+                        <li class="l-footer__menu__item"><a href="#top">Top</a></li>
+                        <li class="l-footer__menu__item"><a href="#about">About</a></li>
+                        <li class="l-footer__menu__item"><a href="#menu">Menu</a></li>
+                        <li class="l-footer__menu__item"><a href="#contact">Contact</a></li>
+                        <li class="l-footer__menu__item"><a href="#blog">Blog</a></li>
+                    </ul><!-- /l-footer__menu__list -->
+                </div><!-- /l-footer__menu -->
+            </div><!-- /l-footer__inner -->
+            <div class="l-footer__pagetop">
+                <a href="#" class="l-footer__pagetop__link"><span class="l-footer__pagetop__icon"></span></a>
             </div>
-            <div class="l-footer__menu">
-                <ul class="l-footer__menu__list">
-                    <li class="l-footer__menu__item"><a href="#top">Top</a></li>
-                    <li class="l-footer__menu__item"><a href="#about">About</a></li>
-                    <li class="l-footer__menu__item"><a href="#menu">Menu</a</li>
-                    <li class="l-footer__menu__item"><a href="#contact">Contact</a></li>
-                    <li class="l-footer__menu__item"><a href="#blog">Blog</a></li>
-                </ul>
-            </div>
-        </div>
-        <p class="l-footer__Copywriter">&copy; Beautiful Days</p>
-    </footer>
-    
-</body>
+            <p class="l-footer__Copywriter">&copy; Beautiful Days</p>
+        </footer><!-- /l-footer -->
+        
+    </body><!-- /l-body -->
 </html>
