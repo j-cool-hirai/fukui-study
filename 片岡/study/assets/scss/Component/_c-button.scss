@@ -1,0 +1,14 @@
+@use "../Global/" as *;
+
+.c-button {
+    text-align: center;
+    margin-top: 82px;
+
+    &__link {
+        border: 1px solid #CCCCCC;
+        padding: 12px 24px;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
