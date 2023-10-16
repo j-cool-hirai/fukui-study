@@ -1,0 +1,121 @@
+@use "../Global/" as *;
+
+.p-loading {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999;
+  animation: hiddenElm 0s ease 4.2s forwards;
+}
+
+.p-loading__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: var(--pink);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: toLeft 1.2s cubic-bezier(0.32, 0, 0.67, 0) 2.8s forwards;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: var(--pink);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    animation: toRight 1.2s cubic-bezier(0.32, 0, 0.67, 0) 2.8s forwards;
+  }
+}
+
+.p-loading__text {
+  color: var(--white);
+  font-size: rem(28.8);
+  font-family: $font-family-deco;
+  font-weight: 300;
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 1000;
+  animation: toInText 2.4s ease-in-out forwards;
+
+  span {
+    opacity: 0;
+    animation: fadeText 0.3s ease-in-out forwards;
+  }
+
+  @for $i from 1 through 14 {
+    span:nth-child(#{$i}) {
+      animation-delay: $i * 0.05s;
+    }
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes toRight {
+  0% {
+    right: 0;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes toInText {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  65% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hiddenElm {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
